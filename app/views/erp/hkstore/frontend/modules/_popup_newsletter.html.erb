@@ -1,0 +1,120 @@
+<div id="popup-newletter" class="popup-newletter show">
+    <div class="module main-newsleter-popup newsletter-wrappers ss_newletter_oca_popup" id="newsletter-wrappers" style="display: block;">
+        <div class="ss_newletter_custom_popup_bg popup_bg"></div>
+        <div class="popup-wraper" style="width: 840px;">
+            <button title="Close" type="button" class="popup-close">×</button>
+            <div class="ss-custom-popup ss-custom-oca-popup">
+                <div class="modcontent">
+                    <div class="oca_popup" id="test-popup">
+                        <div class="popup-content">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="weap-image">
+                                        <img src="/hkstore/img/files/newsletter.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="wrap-info">
+                                        <div class="popup-title">
+                                            <h4>newsletter</h4>
+                                        </div>
+                                        <div class="short-description">Subscribe to the SuperMarket mailing list to receive updates on new arrivals, special offers and other discount information.</div>
+                                        <form action="//magentech.us16.list-manage.com/subscribe?u=74b0f77582219cf039a743aa5&id=3ddce275aa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="formNewsletter clearfix">
+                                            <div class="input-group password__input-group">
+                                                <input type="email" value="" placeholder="Join our mailing list" name="EMAIL" id="mail" class="form-control" aria-label="Join our mailing list">
+                                                <span class="input-group__btn">
+                      <button type="submit" class="btn newsletter__submit" name="commit" id="#Subscribe">
+                      <span class="newsletter__submit-text--large">Subscribe</span>
+                                                </button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                        <label class="hidden-popup">
+                  <input type="checkbox" value="1" name="hidden-popups">
+                  <span class="inline">&nbsp;&nbsp;Don't show this popup again</span>
+                  </label>
+                                        <div class="socials-popup">
+                                            <ul class="social-list">
+                                                <li><a href="https://www.facebook.com/MagenTech/" title="title"><i class="fa fa-facebook"></i><span class="hidden">Facebook</span></a></li>
+                                                <li><a href="https://twitter.com/magentech" title="title"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a></li>
+                                                <li><a href="https://plus.google.com/+Smartaddons" title="title"><i class="fa fa-google-plus"></i><span class="hidden">Google</span></a></li>
+                                                <li><a href="#" title="title"><i class="fa fa-tumblr"></i><span class="hidden">Tumblr</span></a></li>
+                                                <li><a href="#" title="title"><i class="fa fa-pinterest"></i><span class="hidden">Pinterest</span></a></li>
+                                                <li><a href="#" title="title"><i class="fa fa-linkedin"></i><span class="hidden">Linkedin</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        jQuery(document).ready(function($) {
+            $(window).load(function() {
+                var check_cookie = getCookie("newsletter-wrapper");
+                if (check_cookie != '') {
+                    $('#popup-newletter').hide();
+                    $('#popup-newletter').removeClass('show');
+                    return;
+                } else {
+                    $('#popup-newletter').show();
+                    $('body').addClass('hidden-scorll');
+
+                    $('input[name=\'hidden-popups\']').on('change', function() {
+
+                        if ($(this).is(':checked')) {
+                            checkCookie();
+                        } else {
+                            unsetCookie("newsletter-wrapper");
+                        }
+                    });
+
+                    function unsetCookie(name) {
+                        document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                    }
+                    $('.ss_newletter_custom_popup_bg').click(function() {
+                        var this_close = $('.popup-close');
+                        $('body').removeClass('hidden-scorll');
+                        $('#popup-newletter').hide();
+                    });
+                    $('.popup-close').click(function() {
+                        var this_close = $('.popup-close');
+                        $('body').removeClass('hidden-scorll');
+                        $('#popup-newletter').hide();
+                    });
+                    $('#popup-newletter').addClass('popup_bgs');
+                }
+            });
+        });
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            console.log(d.getTime());
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            var check_cookie = getCookie("newsletter-wrapper");
+            if (check_cookie == "") {
+                setCookie("newsletter-wrapper", "Newletter Popup", 1);
+            }
+        }
+    </script>
+</div>

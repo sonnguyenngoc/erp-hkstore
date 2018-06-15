@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="d-flex justify-content-between">
+        <div class="logo-mobiles">
+            <div class="site-header-logo title-heading" itemscope itemtype="http://schema.org/Organization">
+                <a href="<%= erp_hkstore.root_path %>" itemprop="url" class="site-header-logo-image">
+                    <img src="/hkstore/img/logo-hkstore-150x.png"
+                         srcset="/hkstore/img/logo-hkstore-150x.png"
+                         alt=""
+                         itemprop="logo">
+                </a>
+            </div>
+        </div>
+        <div class="group-nav">
+            <div class="group-nav__ico group-nav__menu">
+                <div class="mob-menu">
+                    <i class="material-icons">&#xE8FE;</i>
+                </div>
+            </div>
+            <div class="group-nav__ico group-nav__search no__at">
+                <div class="btn-search-mobi dropdown-toggle">
+                    <i class="material-icons">&#xE8B6;</i>
+                </div>
+                <div class="form_search dropdown-content" style="display: none;">
+                    <form class="formSearch" action="/search" method="get">
+                        <input type="hidden" name="type" value="product">
+                        <input class="form-control" type="search" name="q" value="" placeholder="Enter keywords here... " autocomplete="off" />
+                        <button class="btn btn-search" type="submit">
+                            <span class="btnSearchText hidden">Search</span>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="group-nav__ico group-nav__account no__at">
+                <a href="#" class="dropdown-toggle">
+                    <i class="material-icons">&#xE7FF;</i>
+                </a>
+                <ul class="dropdown-content dropdown-menu sn">
+                    <li class="s-login"><i class="fa fa-user"></i><a href="/account/login" id="customer_login_link">Login</a></li>
+                    <li><a href="" title="My Wishlist"><i class="fa fa-heart"></i>My Wishlist</a></li>
+                    <li><a href="" title=""><i class="fa fa-book"></i>Order History</a></li>
+                    <li><a href="" title="Checkout"><i class="fa fa-external-link-square" aria-hidden="true"></i>Checkout</a></li>
+                    <li><a href="" title="buy on credit"><i class="fa fa-address-card-o"></i>Buy on credit</a></li>
+                </ul>
+            </div>
+            <div class="group-nav__ico group-nav__cart no__at">
+                <div class="minicart-header">
+                    <a href="/cart" class="site-header__carts shopcart dropdown-toggle">
+                        <span class="cart_icos">
+                            <i class="material-icons">&#xE854;</i>
+                        </span>
+                    </a>
+                    <div class="block-content dropdown-content dropdown-menu" style="display: none;">
+                        <div class="no-items">
+                            <p>Your cart is currently empty.</p>
+                            <p class="text-continue btn">
+                                <a href="/">Continue Shopping</a>
+                            </p>
+                        </div>
+                        <div class="block-inner has-items">
+                            <div class="head-minicart">
+                                <span class="label-products">Your Products</span>
+                                <span class="label-price hidden">Price</span>
+                            </div>
+                            <ol id="minicart-sidebar-mobile" class="mini-products-list">
+                            </ol>
+                            <div class="bottom-action actions">
+                                <div class="price-total-w">
+                                    <span class="label-price-total">Subtotal:</span>
+                                    <span class="price-total"><span class="price"><span class='money'>$0.00</span></span>
+                                    </span>
+                                    <div style="clear:both;"></div>
+                                </div>
+                                <div class="button-wrapper">
+                                    <a href="" class="link-button btn-gotocart" title="View your cart">View cart</a>
+                                    <a href="" class="link-button btn-checkout" title="Checkout">Checkout</a>
+                                    <div style="clear:both;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

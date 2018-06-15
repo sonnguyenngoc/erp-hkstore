@@ -1,0 +1,123 @@
+<% (0..2).each do |category| %>
+    <div id="shopify-section-1526877348109" class="shopify-section home-section">
+        <div class="widget-product-carousel clearfix owl-style1">
+            <div class="container">
+                <div class="border-tabs">
+                    <div class="widget-head">
+                        <div class="home-title">
+                            <span>Máy Tính Xách Tay</span>
+                        </div>
+                        <div class="tabs-menu item-sub-cat">
+                            <span class="tabs-menu_btn d-lg-none"><i class="fa fa-bars"></i></span>
+                            <ul class="item-sub-cat tabs-menu_title tabs-title">
+                                <li><%= link_to 'Laptop Asus', '', title: '' %></li>
+                                <li><%= link_to 'Laptop Dell', '', title: '' %></li>
+                                <li><%= link_to 'Laptop HP', '', title: '' %></li>
+                                <li><%= link_to 'Laptop MSI', '', title: '' %></li>
+                                <li><%= link_to 'Laptop Acer', '', title: '' %></li>
+                                <li><%= link_to 'Laptop Toshiba', '', title: '' %></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-product">
+                        <div class="widget-product__item">
+                            <div class="products-listing grid">
+                                <div class="product-layout block-content">
+                                    <div class="ss-carousel ss-owl">
+                                        <div class="owl-carousel" data-nav="true" data-margin="30" data-autoplay="true" data-autospeed="10000" data-speed="300" data-column1="5" data-column2="4" data-column3="3" data-column4="3" data-column5="2">
+                                            <div class="item">
+                                                <% count = 14 %>
+                                                <% (0..13).each_with_index do |product, index| %>
+                                                <div class="product-item" data-id="product-13054983865<%= index %>">
+                                                    <div class="product-item-container grid-view-item   ">
+                                                        <div class="left-block">
+                                                            <div class="product-image-container product-image">
+                                                                <a class="grid-view-item__link image-ajax" href="">
+                                                                    <img class="img-responsive s-img lazyload" data-sizes="auto" src="/hkstore/img/icon-loadings.svg" data-src="/hkstore/img/productx270.jpg" alt="" />
+                                                                </a>
+                                                                <div class="box-countdown">
+                                                                    <div class="countdown_tab box-countdown">
+                                                                        <div class="countdown_inner">
+                                                                            <div id="13054983865<%= index %>"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <script>
+                                                                        $(document).ready(function() {
+                                                                            $("#13054983865<%= index %>").countdown('2018/12/31', function(event) {
+                                                                                $(this).html(event.strftime('<div class="deals-time day"><div class="num-time">%D</div><div class="title-time">days</div></div> <div class="deals-time hour"><div class="num-time">%H</div> <div class="title-time">hours</div></div><div class="deals-time minute"><div class="num-time">%M</div><div class="title-time">mins</div></div><div class="deals-time second"><div class="num-time">%S</div><div class="title-time">secs</div></div>'));
+                                                                            });
+                                                                        })
+                                                                    </script>
+                                                                </div>
+                                                                <div class="label-info">
+                                                                    <span class="label-stock label label2  font-ct">Bán chạy</span>
+                                                                </div>
+                                                            </div>
+                                                            <span class="label-product label-new">Mới</span>
+                                                            <span class="label-product label-sale"><span class="d-none">Sale</span> -4%
+                                                            </span>
+                                                        </div>
+                                                        <div class="right-block">                                                        
+                                                            <div class="caption">
+                                                                <div class="custom-reviews">
+                                                                    <span class="shopify-product-reviews-badge" data-id="13054983865<%= index %>"></span>
+                                                                </div>
+                                                                <h4 class="title-product text-truncate">
+                                                                    <%= link_to 'Laptop Lenovo Thinkpad X260', '', title: '', class: 'product-name' %>
+                                                                </h4>
+                                                                <div class="price">
+                                                                    <!-- snippet/product-price.liquid -->
+                                                                    <span class="visually-hidden">Regular price</span>
+                                                                    <span class="price-new"><span class='money'>1,000,000đ</span></span>
+                                                                    <span class="price-old"><span class='money'>1,200,000đ</span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <%= '</div><div class="item">'.html_safe if index%2 == 1 && index+1 != count %>
+                                                <% end %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget_bestseler left-product-carousel owl-style_dot">
+                            <div class="home-title">
+                                <span>Top bán chạy</span>
+                            </div>
+                            <div class="ss-carousel ss-owl banner-carousel">
+                                <div class="owl-carousels" data-dots="true" data-autoplay="true" data-autospeed="10000" data-margin="0" data-nav="false" data-speed="3333" data-column1="1" data-column2="1" data-column3="2" data-column4="1" data-column5="1">
+                                    <div>
+                                        <% (0..4).each do |products| %>
+                                            <div class="item">
+                                                <div class="product-item clearfix ">
+                                                    <a href="" class="product-img">
+                                                        <img class="lazyload" data-sizes="auto" src="/hkstore/img/icon-loadings.svg" data-src="/hkstore/img/productx100.jpg" alt="">
+                                                    </a>
+                                                    <div class="product-info">
+                                                        <div class="custom-reviews">
+                                                            <span class="shopify-product-reviews-badge" data-id="1305492324470"></span>
+                                                        </div>
+                                                        <%= link_to 'Laptop Lenovo Thinkpad X260 Core i5-6200U...', '', title: '', class: 'product-name' %>
+                                                        <div class="price">
+                                                            <!-- snippet/product-price.liquid -->
+                                                            <span class="visually-hidden">Regular price</span>
+                                                            <span class="price-new"><span class='money'>10,000,000đ</span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <% end %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= render "erp/hkstore/frontend/modules/home/banner_02" %>
+<% end %>            

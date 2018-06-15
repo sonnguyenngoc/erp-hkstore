@@ -1,0 +1,227 @@
+body, .font-ct {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+h1 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+blockquote {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+.header.header-style1 .minilink-header {
+    top: 12px;
+}
+footer .footer-1 .footer-wrapper {
+    font-size: 14px;
+    color: #333;
+}
+@media (min-width: 992px) {
+    footer .footer-1 .footer-block h3.footer-block-title {
+        font-size: 16px;
+        margin: 0 0 13px;
+    }
+    #shopify-section-ss-vertical-menu .vertical-item .vertical-drop.drop-mega .content-links>li>a {
+        color: #333;
+    }
+}
+footer .footer-1 a, footer .footer-1 .middle-content {
+    color: #333;
+}
+footer .footer-1 .middle-content {
+    padding: 15px 0 15px;
+}
+.text-justify {
+    text-align: justify;
+}
+footer .footer-1 .footer-block.footer-about ul li {
+    text-transform: none;
+}
+footer .footer-1 .footer-block.footer-about ul li a:before {
+    all: unset;    
+}
+footer .footer-1 .footer-block.footer-about ul li a {
+    padding-left: 0;
+}
+.footer-center .footer-main .category p {
+    margin-bottom: 5px;
+}
+.footer-center .footer-main .category p a {
+    border-right: 1px solid #666;
+    padding: 0 3px 0 0;
+    font-size: 12px;
+}
+.footer-center .footer-main .category p a:last-child {
+    border-right: none;
+}
+img.logo-footer {
+    height: 100px;
+}
+.footer-about-us {
+    color: #0054A5;
+}
+.header.header-style1 .header-top {
+    color: #333;
+    font-size: 13px;
+}
+.header.header-style1 .header-top .header-top-left .wellcome {
+    cursor: default;
+}
+.header.header-style1 .header-center {
+    padding: 13px 0 13px;
+}
+@media (max-width: 1600px) and (min-width: 1200px) {
+    .header.header-style1 .header-center .header-search, .header.header-style1 .header-center .middle-right {
+        margin-top: 30px;
+    }
+    .header.header-style1 .header-center .navbar-logo {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .header.header-style1 .header-center .header-search {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+footer .footer-1 .footer-block .footer-block-content li a:before {
+    content: "\f101";
+    font-size: 13px;
+}
+.widget-slideshow {
+    margin-top: 30px;
+}
+.home-section>div {
+    margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+    .widget-slideshow {
+    margin-top: 0px;
+    }
+    .home-section>div {
+        margin-bottom: 30px;
+    }
+    .header.header-style1 .header-center {
+        padding: 0;
+    }
+}
+#shopify-section-ss-vertical-menu .vertical-item.level1>a.menu-link {
+    color: #333;
+}
+@media screen and (min-width: 768px) {
+    #shopify-section-ss-tools #so-groups .popup-header {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    #shopify-section-ss-tools #so-groups .popup-header {
+        padding-left: 30px;
+        padding-right: 70px;
+    }
+    #shopify-section-ss-tools #so-groups .popup-content {
+        padding: 13px 30px 13px;
+    }
+    #shopify-section-ss-tools #so-groups .notification {
+        margin-bottom: 30px;
+    }
+}
+footer .footer-1 .footer-top {
+    padding-top: 30px;
+}
+.left-product-carousel .product-item {
+    margin-bottom: 25px;
+}
+.breadcrumb {
+    padding: 0;
+}
+.breadcrumb>li:first-child a>span {
+    color: #333;
+}
+.template-collection h1.collection-tille {
+    padding: 13px 0 13px;
+   font-size: 21px;
+}
+.products-collection .grid .product-layout:hover {
+   box-shadow: 3px 5px 13px 0 rgba(0,0,0,.21);
+   z-index: 100;
+}
+.template-collection .filters-toolbar-wrapper .filters-toolbar-sort,
+.template-collection .filters-toolbar-wrapper label.label-sortby {
+   font-size: 13px;
+}
+footer .footer-1 {
+   margin-top: 30px;
+}
+.products-listing.grid .product-layout .product-item-container .right-block .caption h4 a {
+   color: #333;
+   font-weight: 600;
+}
+.products-listing.grid .product-layout:hover .product-item-container .right-block .caption h4 a {
+   color: #ff0000;
+}
+.box-price .price-new, .box-price span.price, .price .price-new, .price span.price {
+   color: #0054A5;
+}
+.box-price .price-old, .price .price-old {
+   color: #555;
+}
+.template-collection .products-collection .loadmore-product {
+   margin-top: 30px;
+}
+.pagination {
+   font-size: 20px;
+}
+.page-link {
+   padding: 0.5rem 1rem;
+}
+.page-item.active .page-link, .page-link:hover, .page--information .media-box-link {
+   background-color: #0054A5;
+   border-color: #0054A5;
+}
+.page--information .media-box-link:hover {
+   background-color: #ff5c00;
+   border-color: #ff5c00;
+   opacity: .9;
+   box-shadow: 3px 5px 13px 0 rgba(0,0,0,.21);
+   z-index: 100;
+}
+h1.page-title:before, .page--information .title-under:after {
+   background: #0054A5;
+   opacity: .9;
+}
+.breadcrumb>li:last-child span {
+   color: #0054A5;
+   opacity: .9;
+}

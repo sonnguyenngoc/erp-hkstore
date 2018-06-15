@@ -1,0 +1,254 @@
+<div class="main-content" id="MainContent">
+    <section id="breadcrumbs" class=" breadcrumbbg">
+        <div class="breadcrumbwrapper">
+            <div class="container">
+                <nav>
+                    <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemlistelement" itemscope itemtype="http://schema.org/ListItem">
+                            <%= link_to '<span itemprop="name">Trang Chủ</span>'.html_safe, erp_hkstore.root_path, itemprop: 'item', title: '' %>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li class="active" itemprop="itemlistelement" itemscope itemtype="http://schema.org/ListItem">
+                            <span itemprop="item">
+                                <span itemprop="name">Máy Vi Tính</span>
+                            </span>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="col-main col-full">
+            <div id="shopify-section-collection-infos" class="shopify-section">
+                <div class="collection-info banners">
+                    <div class="collection-info-full">
+                        <h1 class="collection-tille">Máy Vi Tính</h1>
+                        <div class="rte des">
+                            <span>
+                                Máy có thiết kế bền bỉ, trọng lượng nhẹ, dễ dàng cất giữ hay di chuyển khi cần thiết. Vỏ ngoài của máy tính Dell Vostro 3668 có độ bền cao chịu được va chạm tốt cũng như hạn chế bụi bẩn, trầy xước trong quá trình sử dụng.Máy tính để bàn Dell Vostro 3668 (70152197) được trang bị chip Intel Core i3 7100 mang lại công suất đỉnh cao, hoạt động ổn định, xử lí nhanh với các tác vụ như: ứng dụng văn phòng, lướt web,...
+                                Máy có thiết kế bền bỉ, trọng lượng nhẹ, dễ dàng cất giữ hay di chuyển khi cần thiết. Vỏ ngoài của máy tính Dell Vostro 3668 có độ bền cao chịu được va chạm tốt cũng như hạn chế bụi bẩn, trầy xước trong quá trình sử dụng.Máy tính để bàn Dell Vostro 3668 (70152197) được trang bị chip Intel Core i3 7100 mang lại công suất đỉnh cao, hoạt động ổn định, xử lí nhanh với các tác vụ như: ứng dụng văn phòng, lướt web,...</span>
+                        </div>
+                    </div>
+                </div>                
+                <div class="category-carousel ss-carousel ss-owl">
+                    <div class="owl-carousel" data-nav="true" data-margin="30" data-column1="5" data-column2="4" data-column3="3" data-column4="3" data-column5="2">
+                          <% (0..12).each do |category| %>  
+                            <div class="product-category">
+                                <a href="/collections/apple">
+                                    <img src="/hkstore/img/related-category.jpg" alt="">
+                                </a>
+                                <div class="category-info">
+                                    <div class="category">
+                                        <h5 class="category-info__title">Máy Tính Xách Tay</h5>
+                                        <div class="category-info__count">386 sản phẩm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="collection-main">
+                    <div class="filters-toolbar-wrapper">
+                        <div class="filters-toolbar">
+                            <div class="row">
+                                <div class="col col-6 col-sm-6 col-lg-6">
+                                    <div class="view-mode sn">
+                                        <a href="javascript:void(0)" class="open-fiter">
+                                            <i class="fa fa-filter"></i>
+                                            Bộ Lọc Sản Phẩm
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col col-6 col-sm-6 col-lg-6">
+                                    <div class="filters-toolbar-item filter-fiel">
+                                        <label for="SortBy" class="label-sortby hidden-xs">Sắp xếp:</label>
+                                        <select name="SortBy" id="SortBy" class="filters-toolbar__input filters-toolbar__input--sort filters-toolbar-sort">          
+                                            <option value="manual">Mặc định</option>
+                                            <option value="title-ascending">Tên sản phẩm A-Z</option>
+                                            <option value="title-descending">Tên sản phẩm Z-A</option>
+                                            <option value="price-ascending">Giá cao xuống thấp</option>
+                                            <option value="price-descending">Giá thấp đến cao</option>
+                                            <option value="created-descending">Ngày tạo mới nhất</option>
+                                        </select>
+                                        <input class="collection-header__default-sort" type="hidden" value="best-selling">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>            
+            <div class="col-sidebar sidebar-fixed">
+                <span id="close-sidebar" class="btn-fixed d-lg-none"><i class="fa fa-times"></i></span>
+                <div id="shopify-section-sidebar-filter-collection" class="shopify-section">
+                    <script src="/hkstore/js/jquery.history.js" type="text/javascript"></script>
+                    <script src="/hkstore/js/ss-filter-shopby.js" type="text/javascript"></script>
+                    <div class="block widget-filter yt-left-wrap clearfix">
+                        <div id="layered-navigation">
+                            <div class="block block-layered-nav">
+                                <div class="block-title">
+                                    <strong><span>Bộ Lọc Sản Phẩm</span></strong>
+                                </div>
+                                <div class="block-content">
+                                    <dl id="narrow-by-list">
+                                        <div class="filter-tags row">
+                                            <div class="col-12 col-xl-6 col-sm-6 Price">
+                                                <dt>
+                                                    <span class="category-filter">Giá sản phẩm</span>                                                    
+                                                    <a href="javascript:void(0)" class="clear" style="display:none">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                    </a>
+                                                </dt>
+                                                <dd>
+                                                    <ol>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Dưới 1 triệu</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Từ 1 ~ 5 triệu</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Từ 5 ~ 10 triệu</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Từ 10 ~ 15 triệu</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Trên 15 triệu</label>
+                                                        </li>
+                                                    </ol>
+                                                </dd>
+                                            </div>
+                                            <div class="col-12 col-xl-6 col-sm-6 Brand">
+                                                <dt>
+                                                  <span class="category-filter">Thương hiệu sản phẩm</span>                                                  
+                                                  <a href="javascript:void(0)" class="clear" style="display:none">
+                                                      <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                  </a>
+                                                </dt>
+
+                                                <dd>
+                                                    <ol>
+                                                        <% (0..3).each do |brand| %>
+                                                            <li class="">
+                                                                <input type="checkbox" value="" />
+                                                                <label>Asus</label>
+                                                            </li>
+                                                            <li class="">
+                                                                <input type="checkbox" value="" />
+                                                                <label>HP</label>
+                                                            </li>
+                                                            <li class="">
+                                                                <input type="checkbox" value="" />
+                                                                <label>Dell</label>
+                                                            </li>
+                                                            <li class="">
+                                                                <input type="checkbox" value="" />
+                                                                <label>Toshiba</label>
+                                                            </li>
+                                                        <% end %>
+                                                    </ol>
+                                                </dd>
+                                            </div>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix clr clear"></div>
+                </div>
+            </div>
+            <div id="shopify-section-collection-template" class="shopify-section">
+                <div data-section-id="collection-template" data-section-type="collection-template" class="products-collection">
+                    <div class="product-wrapper" id="Collection">
+                        <div class="products-listing products-grid grid row">
+                            <% (0..29).each_with_index do |product, index| %>
+                                <div id="product-<%= index %>" class="product product-layout grid__item grid__item--collection-template col-xl-15 col-lg-4 col-md-4 col-sm-4 col-xs-6 grid_5" data-price="10,000,000">
+                                    <span class="d-none">
+                                        <span class='money'>10,000,000</span>
+                                    </span>
+                                    <div class="product-item" data-id="product-<%= index %>">
+                                        <div class="product-item-container grid-view-item   ">
+                                            <div class="left-block">
+                                                <div class="product-image-container product-image">
+                                                    <a class="grid-view-item__link image-ajax" href="" title="Máy Tính Xách Tay Lenovo Thinkpad X260 Core i5-6200U/4GB DDR4/500GB/FreeDOS (20F5A00AVA)">          
+                                                        <img class="img-responsive s-img lazyload" data-sizes="auto" src="/hkstore/img/icon-loadings.svg" data-src="/hkstore/img/productx500.jpg" alt="Máy Tính Xách Tay Lenovo Thinkpad X260 Core i5-6200U/4GB DDR4/500GB/FreeDOS (20F5A00AVA)" />                                                  
+                                                    </a>                                                
+                                                </div>
+                                            </div>
+                                            <div class="right-block">                                            
+                                                <div class="caption">
+                                                    <div class="custom-reviews">
+                                                        <span class="shopify-product-reviews-badge" data-id="<%= index %>"></span>
+                                                    </div>
+                                                    <h4 class="title-product text-truncate">
+                                                        <%= link_to 'Laptop Lenovo Thinkpad X260', '', title: 'Máy Tính Xách Tay Lenovo Thinkpad X260 Core i5-6200U/4GB DDR4/500GB/FreeDOS (20F5A00AVA)', class: 'product-name' %>
+                                                    </h4>
+                                                    <div class="price">
+                                                        <!-- snippet/product-price.liquid -->
+                                                        <span class="visually-hidden">Regular price</span>
+                                                        <span class="price-new"><span class='money'>10,000,000đ</span></span>
+                                                        <span class="price-old"><span class='money'>12,000,000đ</span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="loadmore-product d-flex justify-content-center">      
+                            <div class="toolbar-bottom">
+                                <ul class="pagination a-center">                            
+                                    <li class="page-item disabled"><span class="page-link"><i class="fa fa-angle-left"></i> </span></li>
+                                    <li class="page-item active"><span class="page-link">1</span></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="" title="">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="" title="">3</a>
+                                    </li>                                                                                                          
+                                    <li class="page-item next">
+                                        <a class="page-link" href="" title="Next »">
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>                            
+                              </ul>
+                            </div>                                                                                                
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    @media (min-width:1200px) {
+                        .products-collection .grid .product-layout {
+                            transition: all 0.5s ease 0s;
+                        }
+                    }
+                </style>                
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".open-fiter").click(function() {
+            $('.sidebar-fixed').slideToggle(200);
+            $(this).toggleClass('active');
+        });
+        $('#close-sidebar').click(function() {
+            $('.sidebar-overlay').removeClass('show');
+            $('.sidebar-fixed').removeClass('active');
+
+        });
+    </script>
+</div>
