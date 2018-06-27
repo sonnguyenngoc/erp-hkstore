@@ -1,0 +1,48 @@
+<div class="main-content" id="MainContent">
+	<section id="breadcrumbs" class=" breadcrumbbg">
+        <div class="breadcrumbwrapper">
+            <div class="container">
+                <nav>
+                    <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemlistelement" itemscope itemtype="http://schema.org/ListItem">
+                            <%= link_to '<span itemprop="name">Trang Chủ</span>'.html_safe, erp_hkstore.root_path, itemprop: 'item', title: '' %>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li class="active" itemprop="itemlistelement" itemscope itemtype="http://schema.org/ListItem">
+                            <span itemprop="item">
+                                <span itemprop="name">Máy Vi Tính</span>
+                            </span>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    
+	<div id="shopify-section-list-collections-template" class="shopify-section">
+		<div class="container">
+			<div class="row">
+                <% (0..11).each do |category| %>
+                    <div class="grid__item col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="collection-grid-item">
+                            <a href="<%= erp_hkstore.category_detail_path %>" class="collection-grid-item__link">
+                                <div class="collection-grid-item__overlay" data-bgset="Liquid error (collection-grid-item line 14): Argument error in tag 'include' - Illegal template name"
+                                 data-sizes="auto" data-parent-fit="cover" style="background-image: url('/hkstore/img/category-listing.jpg')">
+                                </div>
+                                <div class="collection-grid-item__title-wrapper">
+                                    <div class="collection-grid-item__title"> Laptop Asus
+                                        <p class="count-products font-ct">( Có 120 Sản Phẩm )</p>
+                                        <p class="font-ct">
+                                            <%= link_to 'Xem Danh Sách', erp_hkstore.category_detail_path, title: '', class: 'btn collection' %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                <% end %>
+			</div>
+		</div>
+	</div>
+</div>

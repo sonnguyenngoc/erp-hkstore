@@ -20,7 +20,7 @@
                                 <ul class="vertical-group">
                                     <% (0..8).each do |menu| %>
                                         <li class="vertical-item level1 toggle-menu vertical_drop mega_parent">
-                                            <a class="menu-link" href="<%= erp_hkstore.category_path %>">
+                                            <a class="menu-link" href="<%= erp_hkstore.category_listing_path %>">
                                                 <span class="icon_items"><i class="fa fa-laptop"></i></span>
                                                 <span class="menu-title">Máy Vi Tính</span>
                                                 <span class="caret">
@@ -35,11 +35,11 @@
                                                                 <div class="ss_megamenu_col col-lg-4">
                                                                     <ul class="content-links">
                                                                         <li class="ss_megamenu_lv2 menuTitle">
-                                                                            <%= link_to 'Máy Tính Xách Tay', erp_hkstore.category_path, title: '' %>
+                                                                            <%= link_to 'Máy Tính Xách Tay', erp_hkstore.category_detail_path, title: '' %>
                                                                         </li>
                                                                         <% (0..5).each do |item| %>
                                                                             <li class="ss_megamenu_lv3 ">
-                                                                                <%= link_to 'Laptop Asus', erp_hkstore.category_path, title: '' %>
+                                                                                <%= link_to 'Laptop Asus', erp_hkstore.category_detail_path, title: '' %>
                                                                             </li>
                                                                         <% end %>
                                                                     </ul>
@@ -75,7 +75,7 @@
                         <nav class="main-wrap">
                             <ul class="main-navigation nav hidden-tablet hidden-sm hidden-xs">
                                 <li class="ss_menu_lv1 menu_item active">
-                                    <%= link_to '<span class="ss_megamenu_title">Về Hoang Khang Incotech</span>'.html_safe, '', title: '' %>
+                                    <%= link_to '<span class="ss_megamenu_title">Về Hoang Khang Incotech</span>'.html_safe, erp_hkstore.about_us_path, title: '' %>
                                 </li>
                                 <li class="ss_menu_lv1 menu_item menu_item_drop arrow">
                                     <a href="" title="">
@@ -163,7 +163,7 @@
                                     <%= link_to '<span class="ss_megamenu_title">Tin Tức</span>'.html_safe, '', title: '' %>
                                 </li>
                                 <li class="ss_menu_lv1 menu_item">
-                                    <%= link_to '<span class="ss_megamenu_title">Liên Hệ</span>'.html_safe, '', title: '' %>
+                                    <%= link_to '<span class="ss_megamenu_title">Liên Hệ</span>'.html_safe, erp_hkstore.contact_us_path, title: '' %>
                                 </li>
                             </ul>
                         </nav>

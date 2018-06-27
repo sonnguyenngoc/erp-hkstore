@@ -8,11 +8,15 @@
                             <%= link_to '<span itemprop="name">Trang Chủ</span>'.html_safe, erp_hkstore.root_path, itemprop: 'item', title: '' %>
                             <meta itemprop="position" content="1" />
                         </li>
+                        <li itemprop="itemlistelement" itemscope itemtype="http://schema.org/ListItem">
+                            <%= link_to '<span itemprop="name">Máy Vi Tính</span>'.html_safe, erp_hkstore.category_listing_path, itemprop: 'item', title: '' %>
+                            <meta itemprop="position" content="2" />
+                        </li>
                         <li class="active" itemprop="itemlistelement" itemscope itemtype="http://schema.org/ListItem">
                             <span itemprop="item">
-                                <span itemprop="name">Máy Vi Tính</span>
+                                <span itemprop="name">Laptop Asus</span>
                             </span>
-                            <meta itemprop="position" content="2" />
+                            <meta itemprop="position" content="3" />
                         </li>
                     </ol>
                 </nav>
@@ -37,7 +41,7 @@
                     <div class="owl-carousel" data-nav="true" data-margin="30" data-column1="5" data-column2="4" data-column3="3" data-column4="3" data-column5="2">
                           <% (0..12).each do |category| %>  
                             <div class="product-category">
-                                <a href="/collections/apple">
+                                <a href="">
                                     <img src="/hkstore/img/related-category.jpg" alt="">
                                 </a>
                                 <div class="category-info">
@@ -130,7 +134,131 @@
                                                     </ol>
                                                 </dd>
                                             </div>
-                                            <div class="col-12 col-xl-6 col-sm-6 Brand">
+                                            <div class="col-12 col-xl-3 col-sm-6 RAM">
+                                                <dt>
+                                                    <span class="category-filter">RAM</span>                                                    
+                                                    <a href="javascript:void(0)" class="clear" style="display:none">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                    </a>
+                                                </dt>
+                                                <dd>
+                                                    <ol>
+                                                        <li class="">
+                                                            <input type="checkbox" value="2gb" />
+                                                            <label>2GB</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="4gb" />
+                                                            <label>4GB</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="8gb" />
+                                                            <label>8GB</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="16gb" />
+                                                            <label>16GB</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="32gb" />
+                                                            <label>32GB</label>
+                                                        </li>
+                                                    </ol>
+                                                </dd>
+                                            </div>
+                                            <div class="col-12 col-xl-3 col-sm-6 Screen">
+                                                <dt>
+                                                    <span class="category-filter">Kích Thước Màn Hình</span>                                                    
+                                                    <a href="javascript:void(0)" class="clear" style="display:none">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                    </a>
+                                                </dt>
+                                                <dd>
+                                                    <ol>
+                                                        <li class="">
+                                                            <input type="checkbox" value="<14" />
+                                                            <label>Nhỏ hơn 14"</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="14" />
+                                                            <label>14"</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="15.6" />
+                                                            <label>15.6"</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value=">17.3" />
+                                                            <label>Từ 17.3"</label>
+                                                        </li>
+                                                    </ol>
+                                                </dd>
+                                            </div>
+                                            <div class="col-12 col-xl-6 col-sm-6 CPU">
+                                                <dt>
+                                                    <span class="category-filter">Bộ vi xử lý</span>                                                    
+                                                    <a href="javascript:void(0)" class="clear" style="display:none">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                    </a>
+                                                </dt>
+                                                <dd>
+                                                    <ol>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Pentium</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Celeron</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Core i3</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Core i5</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>Core i7</label>
+                                                        </li>
+                                                    </ol>
+                                                </dd>
+                                            </div>
+                                            <div class="col-12 col-xl-6 col-sm-6 Storage">
+                                                <dt>
+                                                    <span class="category-filter">Ổ cứng</span>                                                    
+                                                    <a href="javascript:void(0)" class="clear" style="display:none">
+                                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                                    </a>
+                                                </dt>
+                                                <dd>
+                                                    <ol>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>500GB HDD</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>1TB HDD</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>128GB SSD</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>256GB SSD</label>
+                                                        </li>
+                                                        <li class="">
+                                                            <input type="checkbox" value="" />
+                                                            <label>512GB SSD</label>
+                                                        </li>
+                                                    </ol>
+                                                </dd>
+                                            </div>                                            
+                                            <div class="col-12 col-xl-12 col-sm-12 Brand">
                                                 <dt>
                                                   <span class="category-filter">Thương hiệu sản phẩm</span>                                                  
                                                   <a href="javascript:void(0)" class="clear" style="display:none">
@@ -160,7 +288,7 @@
                                                         <% end %>
                                                     </ol>
                                                 </dd>
-                                            </div>
+                                            </div>                                            
                                         </div>
                                     </dl>
                                 </div>
