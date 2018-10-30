@@ -3,7 +3,7 @@ module Erp
     module Frontend
       class HomeController < Erp::Frontend::FrontendController
         def index
-          @body_class = "template-index"
+          @body_class = ""
         end
       end
     end
