@@ -1,0 +1,508 @@
+<div class="header-bottom-inner">
+    <div class="responsive megamenu-style-dev">
+        <nav class="navbar-default">
+            <div class=" container-megamenu   horizontal ">
+                <div class="navbar-header">
+                    <button type="button" id="show-megamenu" data-toggle="collapse" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="megamenu-wrapper">
+                    <span id="remove-megamenu" class="fa fa-times"></span>
+                    <div class="megamenu-pattern">
+                        <div class="container">
+                            <ul class="megamenu" data-transition="fade" data-animationtime="500">
+                                <li class="">
+                                    <p class='close-menu'></p>
+                                    <%= link_to '<strong>Trang Chủ</strong>'.html_safe,
+                                                erp_hkstore.root_path, title: '', class: 'clearfix' %>
+                                </li>
+                                <li class="">
+                                    <p class='close-menu'></p>
+                                    <%= link_to '<strong>Giới Thiệu</strong>'.html_safe,
+                                                '', title: '', class: 'clearfix' %>
+                                </li>
+                                <% (0..4).each do |menu| %>
+                                    <li class="full-width menu-features with-sub-menu hover">
+                                        <p class='close-menu'></p>
+                                        <%= link_to '<strong>Máy Vi Tính</strong><b class="caret"></b>'.html_safe,
+                                                    '', title: '', class: 'clearfix' %>
+                                        <div class="sub-menu">
+                                            <div class="content">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <div class="html ">
+                                                            <ul class="shoppage list-inline row">
+                                                                <li class="col-sm-12 col-md-3">
+                                                                    <%= link_to 'Máy Tính Để Bàn (PC)', '', title: '', class: 'title-shoppage' %>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <%= link_to 'Máy Tính Đồng Bộ (All In One)', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Lựa Chọn Theo Hãng'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy Tính Để Bàn HP', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Dell', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Lenovo', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Apple', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Acer', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Asus', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Lựa Chọn Theo CPU'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Core i7', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Core i5', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Core i3', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Pentium', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Celeron', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Lựa Chọn Theo RAM'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to '32GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to '16GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to '8GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to '4GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to '2GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <%= link_to 'Máy Chủ (Server)', '', title: '', class: 'title-shoppage' %>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <%= link_to 'Server HP', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Server Dell', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Server Lenovo', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <%= link_to 'Máy Tính Trạm (Workstation)', '', title: '', class: 'title-shoppage' %>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <%= link_to 'Máy Tính Trạm HP', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Máy Tính Trạm Dell', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <%= link_to 'Thin Client', '', title: '', class: 'title-shoppage' %>
+                                                                </li>
+                                                                <li class="col-sm-12 col-md-3">
+                                                                    <%= link_to 'Máy Tính Xách Tay (Laptop)', '', title: '', class: 'title-shoppage' %>
+                                                                    <ul>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Lựa Chọn Theo Hãng'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop HP', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop Dell', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop Asus', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop Acer', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop Lenovo', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop MSI', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Macbook', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop Fujitsu', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop Toshiba', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Laptop LG', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>                                                                    
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Lựa Chọn Theo CPU'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Core i9', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Core i7', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Core i5', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Core i3', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Pentium', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'CPU Celeron', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Lựa Chọn Theo RAM'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to '32GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to '16GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to '8GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to '4GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to '2GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <%= link_to 'Máy Tính Bảng (Tablet)', '', title: '', class: 'title-shoppage' %>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <%= link_to 'Apple iPad', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Microsoft Surface', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Tablet Lenovo', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Tablet SamSung', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>                                                            
+                                                                <li class="col-sm-12 col-md-3">
+                                                                    <%= link_to 'Phụ Kiện Máy Tính', '', title: '', class: 'title-shoppage' %>
+                                                                     <ul>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Tấm Dán Màn Hình 3M <span class="menu-label menu-label-new">Mới</span>'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'Tấm Dán Bộ Lọc Đen', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Tấm Dán Bộ Lọc Vàng', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Tấm Dán Có Khung', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Tấm Dán Chống Chói', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Phần Mềm'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'Phần Mềm Diệt Virus', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Phần Mềm Hệ Điều Hành', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Phần Mềm Ứng Dụng', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Bộ Lưu Điện - UPS Offline'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'UPS Offline APC', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'UPS Offline CyberPower', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'UPS Offline Santak', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'UPS Offline ZLPower', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'UPS Offline Vertiv', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Bàn Phím - Chuột'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'Chuột Không Dây', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Chuột Có Dây', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Bàn Phím Không Dây', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Bàn Phím Có Dây', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Bộ Bàn Phím Chuột', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Tai Nghe', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Đế Tản Nhiệt', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Thiết Bị Lưu Trữ'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'Thẻ Nhớ', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'USB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Ổ Cứng Gắn Ngoài', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Ổ Cứng Mạng', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Tản nhiệt', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="col-sm-12 col-md-3">
+                                                                    <%= link_to 'Linh Kiện Máy Tính', '', title: '', class: 'title-shoppage' %>
+                                                                     <ul>
+                                                                        <li class="submenu-shop">
+                                                                            <b class="fa fa-angle-right"></b>
+                                                                            <%= link_to 'Ổ Cứng Máy Tính'.html_safe,
+                                                                                        'javascript:void(0)', title: '', class: 'menuitem-shop' %>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'Ổ Cứng SSD', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Ổ Cứng HDD 2.5-Inch', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Ổ Cứng HDD 3.5-Inch', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Bộ Xử Lý - CPU', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Bộ Nhớ Trong - RAM', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Bo Mạch Chủ - Mainboard', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Card Đồ Họa - VGA', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Nguồn Máy Tính - PSU', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Thùng Máy - Case', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                        <li>
+                                                                            <%= link_to 'Tản nhiệt', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <%= link_to image_tag('/hoangkhang/images/menu/menu-guide.jpg', alt: ''),
+                                                                                '', title: '' %>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <%= link_to image_tag('/hoangkhang/images/menu/menu-guide.jpg', alt: ''),
+                                                                                '', title: '' %>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <% end %>
+                                <li class=" item-style1 with-sub-menu hover">
+                                    <p class='close-menu'></p>
+                                        <%= link_to '<strong>Thiết Bị Văn Phòng</strong><b class="caret"></b>'.html_safe,
+                                                    '', title: '', class: 'clearfix' %>
+                                    <div class="sub-menu">
+                                        <div class="content">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="link ">
+                                                        <%= image_tag '/hoangkhang/images/loading.svg',
+                                                                        data: {size: 'auto', src: '/hoangkhang/images/menu/image-1.jpg'},
+                                                                        alt: '', class: 'lazyload img-full-width' %>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="link ">
+                                                        <%= image_tag '/hoangkhang/images/loading.svg',
+                                                                        data: {size: 'auto', src: '/hoangkhang/images/menu/image-2.jpg'},
+                                                                        alt: '', class: 'lazyload img-full-width' %>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="link ">
+                                                        <%= image_tag '/hoangkhang/images/loading.svg',
+                                                                        data: {size: 'auto', src: '/hoangkhang/images/menu/image-3.jpg'},
+                                                                        alt: '', class: 'lazyload img-full-width' %>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="link ">
+                                                        <%= image_tag '/hoangkhang/images/loading.svg',
+                                                                        data: {size: 'auto', src: '/hoangkhang/images/menu/image-4.jpg'},
+                                                                        alt: '', class: 'lazyload img-full-width' %>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="row">
+                                                <% (0..3).each do |menu| %>
+                                                    <div class="col-sm-3">
+                                                        <ul class="subcategory subcate-col">
+                                                            <li>
+                                                                <%= link_to 'Máy In', '', title: '', class: 'title-submenu subcate-col' %>                                                            
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 static-menu">
+                                                                        <div class="menu">
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy In Laser Mono', '', title: '', class: 'main-menu', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy In Laser Màu', '', title: '', class: 'main-menu', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy In Phun', '', title: '', class: 'main-menu', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy In Khổ Lớn', '', title: '', class: 'main-menu', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy In Nhãn', '', title: '', class: 'main-menu', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy In Kim', '', title: '', class: 'main-menu', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy In Bill', '', title: '', class: 'main-menu', target: '_top' %>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <%= link_to 'Máy In Mã Vạch', '', title: '', class: 'main-menu', target: '_top' %>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                <% end %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <p class='close-menu'></p>
+                                    <%= link_to '<strong>Liên Hệ</strong>'.html_safe,
+                                                '', title: '', class: 'clearfix' %>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

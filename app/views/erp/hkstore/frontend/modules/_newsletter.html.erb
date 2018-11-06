@@ -1,0 +1,140 @@
+<div id="container-module-newletter" class="hidden-md hidden-sm hidden-xs">
+    <div class="so_newletter_custom_popup_bg"></div>
+    <div class="module custom-pop main-newsleter-popup so_newletter_custom_popup so_newletter_oca_popup" id="so_newletter_custom_popup">
+        <div class="so-custom-popup so-custom-oca-popup" style="width: 770px; background-image: url(hoangkhang/images/banners/bg-popup.jpg);">
+            <div class="modcontent">
+                <div class="oca_popup" id="test-popup">
+                    <div class="popup-content">
+                        <div class="popup-title"> join our newsletter </div>
+                        <p class="newsletter_promo font-ct">Subscribe now to get <b>40%</b> off on any product!</p>
+                        <form method="post" name="signup" class="form-group signup send-mail-popup">
+                            <div class="input-control">
+                                <div class="email">
+                                    <input type="email" placeholder="Your email address..." value="" class="form-control" id="txtemail12225024771540868660" name="txtemail">
+                                </div>
+                                <button class="btn btn-primary btn-default" type="submit" onclick="return subscribe_newsletter_popup();" name="submit">
+                                    <i class="fa fa-paper-plane"></i><!-- Subscribe -->
+                                </button>
+                            </div>
+                        </form>
+                        <label class="hidden-popup">
+                            <input type="checkbox" value="1" name="hidden-popup">
+                            <span class="inline">&nbsp;&nbsp;Don't show this popup again</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <div class="socials-w">
+                            <h3>Follow us</h3>
+                            <ul class="socials">
+                                <li class="facebook"><a class="_blank" href="https://www.facebook.com/MagenTech" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a class="_blank" href="https://twitter.com/smartaddons" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li class="google_plus"><a class="_blank" href="https://plus.google.com/u/0/+Smartaddons/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="pinterest"><a class="_blank" href="https://www.pinterest.com/smartaddons/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                <li class="youtube"><a class="_blank" href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.modcontent-->
+            <button title="Close" type="button" class="popup-close">&times;</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function($) {
+            $(window).load(function() {
+                $('.common-home').addClass('hidden-scorll');
+                $('.so_newletter_custom_popup_bg').addClass('popup_bg');
+                $('input[name=\'hidden-popup\']').on('change', function() {
+                    if ($(this).is(':checked')) {
+                        checkCookie();
+                    } else {
+                        unsetCookie("so_newletter_custom_popup");
+                    }
+                });
+
+                function unsetCookie(name) {
+                    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                }
+                $('.popup-close').click(function() {
+                    var this_close = $('.popup-close');
+                    this_close.parents().find('.common-home').removeClass('hidden-scorll');
+                    this_close.parents().find('#container-module-newletter').remove();
+                });
+            });
+        })(jQuery);
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            var check_cookie = getCookie("so_newletter_custom_popup");
+            if (check_cookie == "") {
+                setCookie("so_newletter_custom_popup", "Newletter Popup", 1);
+            }
+        }
+
+        function subscribe_newsletter_popup() {
+            //alert(email);
+            var emailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var email = $("#txtemail12225024771540868660").val();
+            var d = new Date();
+            var createdate = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+            var status = 0;
+            var dataString = 'email=' + email + '&createdate=' + createdate + '&status=' + status;
+            if (email != "") {
+                if (!emailpattern.test(email)) {
+                    $('.alert').remove();
+                    $('.send-mail-popup').after('<div class="alert alert-danger show-error" role="alert"><i class="fa fa-exclamation-circle"></i>  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> Invalid Email </div>')
+                    return false;
+                } else {
+                    $.ajax({
+                        url: 'index.php?route=extension/module/so_newletter_custom_popup/newsletter',
+                        type: 'post',
+                        data: dataString,
+                        dataType: 'json',
+                        success: function(json) {
+                            $('.alert').remove();
+                            if (json.error == false) {
+                                checkCookie();
+                                $('.send-mail-popup').after('<div class="alert alert-success show-error" role="alert"> <i class="fa fa-check-circle"></i> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> ' + json.message + '</div>');
+                                setTimeout(function() {
+                                    var this_close = $('.popup-close');
+                                    this_close.parent().css('display', 'none');
+                                    this_close.parents().find('.common-home').removeClass('hidden-scorll');
+                                    this_close.parents().find('#container-module-newletter').remove();
+                                }, 3000);
+                            } else {
+                                $('.send-mail-popup').after('<div class="alert alert-danger" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> ' + json.message + '</div>');
+                            }
+                            var x = document.getElementsByClassName('signup');
+                            for (i = 0; i < x.length; i++) {
+                                x[i].reset();
+                            }
+                        }
+                    });
+                    return false;
+                }
+            } else {
+                alert("Email is required");
+                $(email).focus();
+                return false;
+            }
+        }
+    </script>
+</div>

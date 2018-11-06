@@ -1,0 +1,46 @@
+<div class="popup-screen">
+    <div class="popup-position">
+        <div class="popup-container popup-small">
+            <div class="popup-html">
+                <div class="popup-header">
+                    <span><i class="fa fa-recent"></i>Sản Phẩm Vừa Xem</span>
+                    <a class="popup-close" data-target="popup-close" data-popup-close="#popup-recent">&times;</a>
+                </div>
+                <div class="popup-content">
+                    <div class="form-content">
+                        <div class="row space">
+                            <% (0..5).each do |product| %>
+                                <div class="col col-sm-4 col-xs-6">
+                                    <div class="form-box">
+                                        <div class="item">
+                                            <div class="product-thumb transition">
+                                                <div class="image">
+                                                    <%= link_to image_tag('/hoangkhang/images/loading.svg', data: {sizes: 'auto', src: '/hoangkhang/images/products/recent-product.jpg'}, alt: '', class: 'lazyload'),
+                                                                '', title: '' %>
+                                                </div>
+                                                <div class="caption">
+                                                    <h4 class="font-ct">
+                                                        <%= link_to 'Lastrami deserunt', '', tilte: '' %>
+                                                    </h4>
+                                                    <p class="price">
+                                                        <span class="price-new">$56.00</span>
+                                                    </p>
+                                                </div>
+                                                <div class="button-group">
+                                                    <button type="button" onclick="cart.add('85');">
+                                                        <span class="">Add To Cart</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

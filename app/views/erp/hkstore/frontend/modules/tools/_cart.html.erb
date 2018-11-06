@@ -1,0 +1,49 @@
+<div class="popup-screen">
+    <div class="popup-position">
+        <div class="popup-container popup-small">
+            <div class="popup-html">
+                <div class="popup-header">
+                    <span><i class="fa fa-shopping-cart"></i>Shopping Cart</span>
+                    <a class="popup-close" data-target="popup-close" data-popup-close="#popup-mycart">&times;</a>
+                </div>
+                <div class="popup-content">
+                    <div class="cart-header">
+                        <table class="table table-striped">
+                            <% (0..1).each do |product| %>
+                                <tr>
+                                    <td class="text-left first">
+                                        <%= link_to image_tag('/hoangkhang/images/loading.svg', data: {sizes: 'auto', src: '/hoangkhang/images/products/cart/product-47x47.jpg'}, class: 'img-thumbnail lazyload'), '', title: '' %>
+                                    </td>
+                                    <td class="text-left">
+                                        <%= link_to 'Lastrami deserunt', '', title: '' %>
+                                    </td>
+                                    <td class="text-right">x 1</td>
+                                    <td class="text-right total-price">$59.00</td>
+                                    <td class="text-right last">
+                                        <a href="javascript:;" title="Remove"><i class="fa fa-trash"></i></a>
+                                    </td>
+                                </tr>
+                            <% end %>
+                        </table>
+                        <div class="cart-bottom">
+                            <table class="table table-striped">
+                                <tr>
+                                    <td class="text-left"><strong>Sub-Total</strong></td>
+                                    <td class="text-right">$159.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left"><strong>Total</strong></td>
+                                    <td class="text-right">$159.00</td>
+                                </tr>
+                            </table>
+                            <p class="text-center">
+                                <a href="" class="btn btn-view-cart"><strong>View Cart</strong></a>
+                                <a href="" class="btn btn-checkout"><strong>Checkout</strong></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
