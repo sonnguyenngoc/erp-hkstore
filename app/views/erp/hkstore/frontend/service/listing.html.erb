@@ -1,0 +1,37 @@
+<div class="container">
+    <ul class="breadcrumb">
+        <li><%= link_to '<i class="fa fa-home"></i>'.html_safe, erp_hkstore.root_path, title: '' %></li>
+        <li><%= link_to 'Danh sách dịch vụ', erp_hkstore.product_listing_path, title: '' %></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12 item-article">
+            <div class="page_support24">
+                <div class="title-box">
+                    <h1 class="text-center text-uppercase title-under">DỊCH VỤ KHÁCH HÀNG</h1>
+                </div>
+                <p class="text-justify">Ngoài cung cấp các máy tính bàn, máy tính xách tay, màn hình máy tính, linh kiện và phụ kiện máy tính, thiết bị hội nghị, máy in, thiết bị chuyển mạch,... từ các hãng như: HP, DELL, LENOVO, ASUS, TOSHIBA, CANON, EPSON, D-LINK, 3M và các hãng khác. Hoang Khang Incotech còn đưa ra các dịch vụ sau bán hàng như bảo trì và sửa chữa máy vi tính, dịch vụ sữa chửa máy in, dịch vụ nạp mực, dịch vụ thi công mạng, dịch vụ thi công hệ thống thiết bị hội nghị truyền hình, dịch vụ thi công hệ thống tổng đài, dịch vụ nâng cấp bảo hành,...</p>
+                <div class="divider divider--lg"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                    <% count = 12 %>
+                    <% (0..11).each_with_index do |product, index| %>
+                        <div class="media-box-link" onclick="location.href=''">
+                            <div class="media-box-link--figure text-center">
+                                <span class="icon icon-assignment fa fa-laptop"></span>
+                            </div>
+                            <div class="media-box-link--content">
+                                <h4 class="font22">Sửa chữa máy tính</h4>
+                                <p class="text-justify">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcol.</p>
+                            </div>
+                            <div class="media-box-link--arrow">
+                                <span class="icon icon-arrow_forward fa fa-arrow-right"></span>
+                            </div>
+                        </div>
+                        <div class="divider divider--md1"></div>
+                        <%= '</div><div class="col-md-6">'.html_safe if index%2 == 1 && index+1 != count %>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -336,7 +336,7 @@ $(function ($) {
 			} else {
 				width++;
 				elem.style.width = width + '%';
-				elem.style.height = '4px';
+				elem.style.height = '3px';
 			}
 		   //$('.so-pre-loader').find('.run-number').html(width);
 		}

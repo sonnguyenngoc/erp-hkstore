@@ -14,21 +14,11 @@
                     <div class="megamenu-pattern">
                         <div class="container">
                             <ul class="megamenu" data-transition="fade" data-animationtime="500">
-                                <li class="">
-                                    <p class='close-menu'></p>
-                                    <%= link_to '<strong>Trang Chủ</strong>'.html_safe,
-                                                erp_hkstore.root_path, title: '', class: 'clearfix' %>
-                                </li>
-                                <li class="">
-                                    <p class='close-menu'></p>
-                                    <%= link_to '<strong>Giới Thiệu</strong>'.html_safe,
-                                                '', title: '', class: 'clearfix' %>
-                                </li>
                                 <% (0..4).each do |menu| %>
                                     <li class="full-width menu-features with-sub-menu hover">
                                         <p class='close-menu'></p>
                                         <%= link_to '<strong>Máy Vi Tính</strong><b class="caret"></b>'.html_safe,
-                                                    '', title: '', class: 'clearfix' %>
+                                                    erp_hkstore.product_listing_path, title: '', class: 'clearfix' %>
                                         <div class="sub-menu">
                                             <div class="content">
                                                 <div class="row">
@@ -36,10 +26,10 @@
                                                         <div class="html ">
                                                             <ul class="shoppage list-inline row">
                                                                 <li class="col-sm-12 col-md-3">
-                                                                    <%= link_to 'Máy Tính Để Bàn (PC)', '', title: '', class: 'title-shoppage' %>
+                                                                    <%= link_to 'Máy Tính Để Bàn (PC)', erp_hkstore.product_listing_path, title: '', class: 'title-shoppage' %>
                                                                     <ul>
                                                                         <li>
-                                                                            <%= link_to 'Máy Tính Đồng Bộ (All In One)', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Máy Tính Đồng Bộ (All In One)', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li class="submenu-shop">
                                                                             <b class="fa fa-angle-right"></b>
@@ -47,22 +37,22 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'Máy Tính Để Bàn HP', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Máy Tính Để Bàn HP', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Máy Tính Để Bàn Dell', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Dell', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Máy Tính Để Bàn Lenovo', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Lenovo', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Máy Tính Để Bàn Apple', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Apple', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Máy Tính Để Bàn Acer', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Acer', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Máy Tính Để Bàn Asus', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Máy Tính Để Bàn Asus', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -72,19 +62,19 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Core i7', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Core i7', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Core i5', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Core i5', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Core i3', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Core i3', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Pentium', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Pentium', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Celeron', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Celeron', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -94,48 +84,48 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to '32GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '32GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to '16GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '16GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to '8GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '8GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to '4GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '4GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to '2GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '2GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
                                                                     </ul>
-                                                                    <%= link_to 'Máy Chủ (Server)', '', title: '', class: 'title-shoppage' %>
+                                                                    <%= link_to 'Máy Chủ (Server)', erp_hkstore.product_listing_path, title: '', class: 'title-shoppage' %>
                                                                     <ul>
                                                                         <li>
-                                                                            <%= link_to 'Server HP', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Server HP', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Server Dell', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Server Dell', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Server Lenovo', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Server Lenovo', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                     </ul>
-                                                                    <%= link_to 'Máy Tính Trạm (Workstation)', '', title: '', class: 'title-shoppage' %>
+                                                                    <%= link_to 'Máy Tính Trạm (Workstation)', erp_hkstore.product_listing_path, title: '', class: 'title-shoppage' %>
                                                                     <ul>
                                                                         <li>
-                                                                            <%= link_to 'Máy Tính Trạm HP', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Máy Tính Trạm HP', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Máy Tính Trạm Dell', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Máy Tính Trạm Dell', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                     </ul>
-                                                                    <%= link_to 'Thin Client', '', title: '', class: 'title-shoppage' %>
+                                                                    <%= link_to 'Thin Client', erp_hkstore.product_listing_path, title: '', class: 'title-shoppage' %>
                                                                 </li>
                                                                 <li class="col-sm-12 col-md-3">
-                                                                    <%= link_to 'Máy Tính Xách Tay (Laptop)', '', title: '', class: 'title-shoppage' %>
+                                                                    <%= link_to 'Máy Tính Xách Tay (Laptop)', erp_hkstore.product_listing_path, title: '', class: 'title-shoppage' %>
                                                                     <ul>
                                                                         <li class="submenu-shop">
                                                                             <b class="fa fa-angle-right"></b>
@@ -143,34 +133,34 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop HP', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop HP', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop Dell', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop Dell', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop Asus', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop Asus', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop Acer', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop Acer', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop Lenovo', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop Lenovo', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop MSI', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop MSI', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Macbook', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Macbook', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop Fujitsu', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop Fujitsu', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop Toshiba', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop Toshiba', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Laptop LG', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Laptop LG', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>                                                                    
@@ -180,22 +170,22 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Core i9', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Core i9', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Core i7', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Core i7', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Core i5', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Core i5', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Core i3', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Core i3', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Pentium', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Pentium', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'CPU Celeron', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'CPU Celeron', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -205,41 +195,41 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to '32GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '32GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to '16GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '16GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to '8GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '8GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to '4GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '4GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to '2GB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to '2GB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
                                                                     </ul>
-                                                                    <%= link_to 'Máy Tính Bảng (Tablet)', '', title: '', class: 'title-shoppage' %>
+                                                                    <%= link_to 'Máy Tính Bảng (Tablet)', erp_hkstore.product_listing_path, title: '', class: 'title-shoppage' %>
                                                                     <ul>
                                                                         <li>
-                                                                            <%= link_to 'Apple iPad', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Apple iPad', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Microsoft Surface', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Microsoft Surface', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Tablet Lenovo', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Tablet Lenovo', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Tablet SamSung', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Tablet SamSung', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                     </ul>
                                                                 </li>                                                            
                                                                 <li class="col-sm-12 col-md-3">
-                                                                    <%= link_to 'Phụ Kiện Máy Tính', '', title: '', class: 'title-shoppage' %>
+                                                                    <%= link_to 'Phụ Kiện Máy Tính', erp_hkstore.product_listing_path, title: '', class: 'title-shoppage' %>
                                                                      <ul>
                                                                         <li class="submenu-shop">
                                                                             <b class="fa fa-angle-right"></b>
@@ -247,16 +237,16 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'Tấm Dán Bộ Lọc Đen', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Tấm Dán Bộ Lọc Đen', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Tấm Dán Bộ Lọc Vàng', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Tấm Dán Bộ Lọc Vàng', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Tấm Dán Có Khung', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Tấm Dán Có Khung', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Tấm Dán Chống Chói', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Tấm Dán Chống Chói', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -266,13 +256,13 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'Phần Mềm Diệt Virus', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Phần Mềm Diệt Virus', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Phần Mềm Hệ Điều Hành', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Phần Mềm Hệ Điều Hành', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Phần Mềm Ứng Dụng', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Phần Mềm Ứng Dụng', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -282,19 +272,19 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'UPS Offline APC', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'UPS Offline APC', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'UPS Offline CyberPower', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'UPS Offline CyberPower', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'UPS Offline Santak', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'UPS Offline Santak', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'UPS Offline ZLPower', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'UPS Offline ZLPower', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'UPS Offline Vertiv', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'UPS Offline Vertiv', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -304,27 +294,27 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'Chuột Không Dây', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Chuột Không Dây', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Chuột Có Dây', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Chuột Có Dây', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Bàn Phím Không Dây', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Bàn Phím Không Dây', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Bàn Phím Có Dây', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Bàn Phím Có Dây', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Bộ Bàn Phím Chuột', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Bộ Bàn Phím Chuột', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Tai Nghe', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Tai Nghe', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Đế Tản Nhiệt', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Đế Tản Nhiệt', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li class="submenu-shop">
                                                                             <b class="fa fa-angle-right"></b>
@@ -332,26 +322,26 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'Thẻ Nhớ', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Thẻ Nhớ', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'USB', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'USB', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Ổ Cứng Gắn Ngoài', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Ổ Cứng Gắn Ngoài', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Ổ Cứng Mạng', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Ổ Cứng Mạng', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Tản nhiệt', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Tản nhiệt', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
                                                                 <li class="col-sm-12 col-md-3">
-                                                                    <%= link_to 'Linh Kiện Máy Tính', '', title: '', class: 'title-shoppage' %>
+                                                                    <%= link_to 'Linh Kiện Máy Tính', erp_hkstore.product_listing_path, title: '', class: 'title-shoppage' %>
                                                                      <ul>
                                                                         <li class="submenu-shop">
                                                                             <b class="fa fa-angle-right"></b>
@@ -359,36 +349,36 @@
                                                                                         'javascript:void(0)', title: '', class: 'menuitem-shop' %>
                                                                             <ul>
                                                                                 <li>
-                                                                                    <%= link_to 'Ổ Cứng SSD', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Ổ Cứng SSD', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Ổ Cứng HDD 2.5-Inch', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Ổ Cứng HDD 2.5-Inch', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                                 <li>
-                                                                                    <%= link_to 'Ổ Cứng HDD 3.5-Inch', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                                    <%= link_to 'Ổ Cứng HDD 3.5-Inch', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Bộ Xử Lý - CPU', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Bộ Xử Lý - CPU', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Bộ Nhớ Trong - RAM', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Bộ Nhớ Trong - RAM', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Bo Mạch Chủ - Mainboard', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Bo Mạch Chủ - Mainboard', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Card Đồ Họa - VGA', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Card Đồ Họa - VGA', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Nguồn Máy Tính - PSU', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Nguồn Máy Tính - PSU', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Thùng Máy - Case', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Thùng Máy - Case', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                         <li>
-                                                                            <%= link_to 'Tản nhiệt', '', title: '', class: 'menuitem-shop', target: '_top' %>
+                                                                            <%= link_to 'Tản nhiệt', erp_hkstore.product_listing_path, title: '', class: 'menuitem-shop', target: '_top' %>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
@@ -413,38 +403,19 @@
                                 <li class=" item-style1 with-sub-menu hover">
                                     <p class='close-menu'></p>
                                         <%= link_to '<strong>Thiết Bị Văn Phòng</strong><b class="caret"></b>'.html_safe,
-                                                    '', title: '', class: 'clearfix' %>
+                                                    erp_hkstore.product_listing_path, title: '', class: 'clearfix' %>
                                     <div class="sub-menu">
                                         <div class="content">
                                             <div class="row">
-                                                <div class="col-sm-3">
-                                                    <div class="link ">
-                                                        <%= image_tag '/hoangkhang/images/loading.svg',
-                                                                        data: {size: 'auto', src: '/hoangkhang/images/menu/image-1.jpg'},
-                                                                        alt: '', class: 'lazyload img-full-width' %>
+                                                <% (0..3).each do |menu_image| %>
+                                                    <div class="col-sm-3">
+                                                        <div class="link ">
+                                                            <%= image_tag '/hoangkhang/images/loading.svg',
+                                                                            data: {size: 'auto', src: '/hoangkhang/images/menu/img-main-menu.png'},
+                                                                            alt: '', class: 'lazyload img-full-width' %>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="link ">
-                                                        <%= image_tag '/hoangkhang/images/loading.svg',
-                                                                        data: {size: 'auto', src: '/hoangkhang/images/menu/image-2.jpg'},
-                                                                        alt: '', class: 'lazyload img-full-width' %>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="link ">
-                                                        <%= image_tag '/hoangkhang/images/loading.svg',
-                                                                        data: {size: 'auto', src: '/hoangkhang/images/menu/image-3.jpg'},
-                                                                        alt: '', class: 'lazyload img-full-width' %>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="link ">
-                                                        <%= image_tag '/hoangkhang/images/loading.svg',
-                                                                        data: {size: 'auto', src: '/hoangkhang/images/menu/image-4.jpg'},
-                                                                        alt: '', class: 'lazyload img-full-width' %>
-                                                    </div>
-                                                </div>
+                                                <% end %>
                                             </div>
                                             <div class="border"></div>
                                             <div class="row">
@@ -452,35 +423,16 @@
                                                     <div class="col-sm-3">
                                                         <ul class="subcategory subcate-col">
                                                             <li>
-                                                                <%= link_to 'Máy In', '', title: '', class: 'title-submenu subcate-col' %>                                                            
+                                                                <%= link_to 'Máy In', erp_hkstore.product_listing_path, title: '', class: 'title-submenu subcate-col' %>                                                            
                                                                 <div class="row">
                                                                     <div class="col-sm-12 static-menu">
                                                                         <div class="menu">
                                                                             <ul>
-                                                                                <li>
-                                                                                    <%= link_to 'Máy In Laser Mono', '', title: '', class: 'main-menu', target: '_top' %>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <%= link_to 'Máy In Laser Màu', '', title: '', class: 'main-menu', target: '_top' %>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <%= link_to 'Máy In Phun', '', title: '', class: 'main-menu', target: '_top' %>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <%= link_to 'Máy In Khổ Lớn', '', title: '', class: 'main-menu', target: '_top' %>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <%= link_to 'Máy In Nhãn', '', title: '', class: 'main-menu', target: '_top' %>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <%= link_to 'Máy In Kim', '', title: '', class: 'main-menu', target: '_top' %>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <%= link_to 'Máy In Bill', '', title: '', class: 'main-menu', target: '_top' %>
-                                                                                </li>
-                                                                                <li>
-                                                                                    <%= link_to 'Máy In Mã Vạch', '', title: '', class: 'main-menu', target: '_top' %>
-                                                                                </li>
+                                                                                <% (0..6).each do |sub_menu| %>
+                                                                                    <li>
+                                                                                        <%= link_to 'Máy In Laser Mono', erp_hkstore.product_listing_path, title: '', class: 'main-menu', target: '_top' %>
+                                                                                    </li>
+                                                                                <% end %>
                                                                             </ul>
                                                                         </div>
                                                                     </div>
@@ -493,10 +445,83 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="">
+                                <li class=" item-style1 with-sub-menu hover">
                                     <p class='close-menu'></p>
-                                    <%= link_to '<strong>Liên Hệ</strong>'.html_safe,
-                                                '', title: '', class: 'clearfix' %>
+                                        <%= link_to '<strong>Thiết Bị Mạng</strong><b class="caret"></b>'.html_safe,
+                                                    erp_hkstore.product_listing_path, title: '', class: 'clearfix' %>
+                                    <div class="sub-menu">
+                                        <div class="content">
+                                            <div class="row">
+                                                <% (0..3).each do |menu_image| %>
+                                                    <div class="col-sm-3">
+                                                        <div class="link ">
+                                                            <%= image_tag '/hoangkhang/images/loading.svg',
+                                                                            data: {size: 'auto', src: '/hoangkhang/images/menu/img-main-menu.png'},
+                                                                            alt: '', class: 'lazyload img-full-width' %>
+                                                        </div>
+                                                    </div>
+                                                <% end %>
+                                            </div>
+                                            <div class="border"></div>
+                                            <div class="row">
+                                                <% (0..3).each do |menu| %>
+                                                    <div class="col-sm-3">
+                                                        <ul class="subcategory subcate-col">
+                                                            <li>
+                                                                <%= link_to 'Máy In', erp_hkstore.product_listing_path, title: '', class: 'title-submenu subcate-col' %>                                                            
+                                                                <div class="row">
+                                                                    <div class="col-sm-12 static-menu">
+                                                                        <div class="menu">
+                                                                            <ul>
+                                                                                <% (0..6).each do |sub_menu| %>
+                                                                                    <li>
+                                                                                        <%= link_to 'Máy In Laser Mono', erp_hkstore.product_listing_path, title: '', class: 'main-menu', target: '_top' %>
+                                                                                    </li>
+                                                                                <% end %>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                <% end %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="blog-item with-sub-menu hover">
+                                    <p class='close-menu'></p>
+                                    <a href="<%= erp_hkstore.service_listing_path %>" class="clearfix">
+                                        <strong>Dịch Vụ Khách Hàng</strong>                                
+                                        <b class='caret'></b>
+                                    </a>                                
+                                    <div class="sub-menu">
+                                        <div class="content">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="html ">
+                                                        <div class="row feature-blog">
+                                                            <% (0..5).each do |service| %>
+                                                                <div class="col-md-2 col-sm-12 menu-services">
+                                                                    <a href="" class="menu--item">
+                                                                        <%= image_tag '/hoangkhang/images/banners/customer-services.png', alt: '' %>                                                                    
+                                                                        <span>Bảo trì máy tính</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-md-2 col-sm-12 menu-services">
+                                                                    <a href="" class="menu--item">
+                                                                        <%= image_tag '/hoangkhang/images/banners/customer-services.png', alt: '' %>                                                                    
+                                                                        <span>Thi công máy chiếu</span>
+                                                                    </a>
+                                                                </div>
+                                                            <% end %>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>

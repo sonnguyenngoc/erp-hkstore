@@ -1,0 +1,105 @@
+<div class="container">
+    <ul class="breadcrumb">
+        <li><%= link_to '<i class="fa fa-home"></i>'.html_safe, erp_hkstore.root_path, title: '' %></li>
+        <li><%= link_to 'Tìm kiếm sản phẩm', '', title: '' %></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12">
+            <div class="form-group">
+                <h1>Kết quả tìm kiếm</h1>
+                <label class="control-label" for="input-search">Từ khóa tìm kiếm</label>
+                <div class="row form-product-search">
+                    <div class="col-sm-4">
+                        <input type="text" name="search" value="" placeholder="Nhập từ khóa tìm kiếm sản phẩm..." class="form-control" />
+                    </div>
+                    <div class="col-sm-4">
+                        <select name="category_id" class="form-control">
+                            <option value="">Tất cả chuyên mục</option>
+                            <option value="">Accessories</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bathroom</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bedroom</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decor</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Furniture</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Living room</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Theid cupensg</option>
+                            <option value="">Electronics</option>
+                            <option value="">Macbook Collection</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blazers</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dresses</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jackets</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jeans</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jumpsuits</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knitwear</option>
+                            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outerwear</option>                            
+                        </select>
+                    </div>
+                </div>
+                <input type="button" value="Tìm kiếm" class="btn btn-primary" />
+            </div>
+            <div class="products-category">
+                <div class="products-list row nopadding-xs">
+                    <% (0..7).each do |product| %>
+                        <div class="product-layout product-grid col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item-container">
+                                <div class="left-block left-b">
+                                    <div class="product-image-container second_img ">
+                                        <a href="" target="_self" title="">
+                                            <%= image_tag '/hoangkhang/images/dot.gif', data: {sizes: 'auto', src: '/hoangkhang/images/products/1-270x270.jpg'}, alt: '', class: 'img-1 lazyload' %>
+                                            <%= image_tag '/hoangkhang/images/dot.gif', data: {sizes: 'auto', src: '/hoangkhang/images/products/1-270x270.jpg'}, alt: '', class: 'img-2 lazyload' %>
+                                        </a>
+                                    </div>
+                                    <div class="box-label">
+                                        <span class="label-product label-sale">-23%</span>
+                                    </div>
+                                </div>
+                                <div class="right-block">
+                                    <div class="rating">
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                    </div>
+                                    <h4>
+                                        <%= link_to 'Màn Hình HP S240uj 23.8-Inch 2K IPS (T7B66AA)', '', title: 'Màn Hình HP S240uj 23.8-Inch 2K IPS (T7B66AA)', target: '_self' %>
+                                    </h4>
+                                    <div class="price">
+                                        <span class="price-new">4,800,000 VNĐ</span>
+                                        <span class="price-old">5,000,000 VNĐ</span>
+                                    </div>
+                                    <div class="button-group cartinfo--static">
+                                        <a class="btn-button" title="" >
+                                            <i class="pe-7s-link"></i><span>Add to Cart</span>
+                                        </a>
+                                        <a class="btn-button" title="">
+                                            <i class="pe-7s-like"></i><span>Add to Wish List</span>
+                                        </a>
+                                        <a class="btn-button" title="">
+                                            <i class="pe-7s-repeat"></i><span>Compare this Product</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                    <% end %>
+                </div>
+                <div class="product-filter product-filter-bottom filters-panel">
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            <ul class="pagination">
+                                <li class="active"><span><i class="fa fa-arrow-left"></i></span></li>
+                                <li class="active"><span>1</span></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href=""><i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 text-right">Hiển thị 1 đến 24 sản phẩm (15 trang)</div>
+                    </div>
+                </div>
+            </div>
+            <%= render 'erp/hkstore/frontend/modules/tools' %>
+        </div>
+    </div>
+</div>

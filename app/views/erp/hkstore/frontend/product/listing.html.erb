@@ -1,0 +1,222 @@
+<div class="breadcrumbs ">
+    <div class="container">
+        <div class="current-name">Màn Hình Máy Tính</div>
+        <ul class="breadcrumb">
+            <li><%= link_to '<i class="fa fa-home"></i>'.html_safe, erp_hkstore.root_path, title: '' %></li>
+            <li><%= link_to 'Màn hình máy tính', '', title: '' %></li>
+        </ul>
+    </div>
+</div>
+<div class="container product-listing content-main ">
+    <div class="row">
+        <div id="content" class="col-md-9 col-sm-12 col-xs-12 fluid-sidebar">            
+            <div class="products-category clearfix">
+                <div class="refine-search form-group clearfix">
+                    <h3 class="title-category">Chuyên Mục Liên Quan</h3>
+                    <ul class="refine-search__content ">
+                        <% (0..8).each do |sub_category| %>
+                            <li class="refine-search__subitem">
+                                <%= link_to image_tag('/hoangkhang/images/dot.gif', data: {sizes: 'auto', src: '/hoangkhang/images/products/menu-270x270.jpg'}, alt: '', class: 'lazyload'),
+                                            erp_hkstore.product_listing_path, title: '', class: 'thumbnail' %>
+                                <%= link_to 'Màn Hình Dell', erp_hkstore.product_listing_path, title: '', class: 'text-center' %>
+                            </li>
+                        <% end %>
+                    </ul>
+                </div>
+                <h1 class="title-category ">Màn Hình Máy Tính</h1>                            
+                <div class="products-list row nopadding-xs">
+                    <% (0..8).each do |product| %>
+                        <div class="product-layout product-grid product-grid-3 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item-container">
+                                <div class="left-block left-b">
+                                    <div class="product-image-container">
+                                        <a href="<%= erp_hkstore.product_detail_path %>" target="_self" title="">
+                                            <%= image_tag '/hoangkhang/images/dot.gif', data: {sizes: 'auto', src: '/hoangkhang/images/products/1-270x270.jpg'}, alt: '', class: 'img-1 lazyload' %>
+                                        </a>
+                                    </div>                                    
+                                </div>
+                                <div class="right-block right-b">
+                                    <div class="rate-history">
+                                        <div class="ratings">
+                                            <div class="rating-box">
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        <%= link_to 'Màn Hình HP S240uj 23.8-Inch 2K IPS (T7B66AA)', erp_hkstore.product_detail_path, title: '' %>
+                                    </h4>
+                                    <div class="price">
+                                        <span class="price-new">4,800,000 VNĐ</span>
+                                        <span class="price-old">5,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-layout product-grid product-grid-3 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="product-item-container">
+                                <div class="left-block left-b">
+                                    <div class="product-image-container">
+                                        <a href="<%= erp_hkstore.product_detail_path %>" target="_self" title="">
+                                            <%= image_tag '/hoangkhang/images/dot.gif', data: {sizes: 'auto', src: '/hoangkhang/images/products/1-270x270.jpg'}, alt: '', class: 'img-1 lazyload' %>
+                                        </a>
+                                    </div>                                    
+                                </div>
+                                <div class="right-block right-b">
+                                    <div class="rate-history">
+                                        <div class="ratings">
+                                            <div class="rating-box">
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <h4>
+                                        <%= link_to 'Màn Hình HP S240uj', erp_hkstore.product_detail_path, title: '' %>
+                                    </h4>
+                                    <div class="price">
+                                        <span class="price-new">4,800,000 VNĐ</span>
+                                        <span class="price-old">5,000,000 VNĐ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+                <div class="product-filter product-filter-bottom filters-panel">
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            <ul class="pagination">
+                                <li class="active"><span><i class="fa fa-arrow-left"></i></span></li>
+                                <li class="active"><span>1</span></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href=""><i class="fa fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 text-right">Hiển thị 1 đến 24 sản phẩm (15 trang)</div>
+                    </div>
+                </div>
+            </div>
+            <%= render 'erp/hkstore/frontend/modules/tools' %>
+        </div>
+        <aside class="col-md-3 col-sm-4 col-xs-12 content-aside right_column sidebar-offcanvas">
+            <span id="close-sidebar" class="fa fa-times"></span>
+            <div class="module so_filter_wrap block-shopby">
+                <h3 class="modtitle">Tìm Trong Chuyên Mục</h3>
+                <div class="modcontent">
+                    <ul>
+                        <li class="so-filter-options">
+                            <div class="so-filter-heading">
+                                <div class="so-filter-heading-text">
+                                    <span>Từ khóa tìm kiếm</span>
+                                </div>
+                                <i class="fa fa-chevron-down"></i>
+                            </div>
+                            <div class="so-filter-content-opts">
+                                <div class="so-filter-content-opts-container">
+                                    <div class="so-filter-option">
+                                        <div class="so-option-container">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="text_search"value="">
+                                                <div class="input-group-btn">
+                                                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="so-filter-options" data-option="Subcategory">
+                            <div class="so-filter-heading">
+                                <div class="so-filter-heading-text">
+                                    <span>CPU</span>
+                                </div>
+                                <i class="fa fa-chevron-down"></i>
+                            </div>
+                            <div class="so-filter-content-opts">
+                                <div class="so-filter-content-opts-container">
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Knitwear
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>2</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_disable" >
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Blazers
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>0</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt_active  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-check-square-o"></span>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Dresses
+                                            </label>
+                                            <div class="option-count  opt_close">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Outerwear
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>2</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </li>                        
+                    </ul>
+                    <a href="javascript:;" class="btn btn-default inverse btn_resetAll">
+                        <span class="hidden fa fa-times" aria-hidden="true"></span>Reset All
+                    </a>
+                </div>
+            </div>            
+            <div class="module banner-left hidden-xs ">
+                <h2></h2>
+                <div class="banner-sidebar banners">
+                    <div>
+                        <%= link_to image_tag('/hoangkhang/images/banners/banner-sidebar.jpg', alt: ''), '', title: '' %>
+                    </div>
+                </div>
+            </div>
+        </aside>        
+    </div>
+</div>

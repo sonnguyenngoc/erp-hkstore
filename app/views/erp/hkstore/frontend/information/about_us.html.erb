@@ -1,0 +1,37 @@
+<div class="container">
+    <ul class="breadcrumb">
+        <li><%= link_to '<i class="fa fa-home"></i>'.html_safe, erp_hkstore.root_path, title: '' %></li>
+        <li><%= link_to 'Giới thiệu công ty', '', title: '' %></li>
+    </ul>
+    <div class="row">
+        <div id="content" class="col-sm-12 item-article">
+            <div class="row box-1-about">
+                <div class="col-md-9 welcome-about-us">
+                    <div class="title-about-us">
+                        <h1>CÔNG TY TNHH GIẢI PHÁP CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG HOÀNG KHANG</h1>
+                    </div>
+                    <div class="content-about-us">
+                        <div class="des-about-us text-justify">
+                            Nulla auctor mauris ut dui luctus semper. In hac habitasse platea dictumst. Duis pellentesque ligula a risus suscipit dignissim. Nunc non nisl lacus. Integer pharetra lacinia dapibus. Donec eu dolor dui, vel posuere mauris.<br><br> Pellentesque semper congue sodales. In consequat, metus eget con sequat ornare, augue dolor blandit purus, vitae lacinia nisi tellus in erat. Nulla ac justo eget massa aliquet sodales. Maecenas mattis male suada sem, in fringilla massa dapibus quis. Suspendisse aliquam leo id neque auctor molestie. Etiam at nulla tellus.<br><br> Nulla auctor mauris ut dui luctus semper. In hac habitasse platea dictumst. Duis pellentesque ligula a risus suscipit dignissim.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 why-choose-us">
+                    <div class="title-about-us">
+                        <h2>Why Choose Us</h2>
+                    </div>
+                    <div class="content-why">
+                        <ul class="why-list">
+                            <li><%= link_to 'Shipping &amp; Returns', '', title: '' %></li>
+                            <li><%= link_to 'Secure Shopping', '', title: '' %></li>
+                            <li><%= link_to 'International Shipping', '', title: '' %></li>
+                            <li><%= link_to 'Affiliates', '', title: '' %></li>
+                            <li><%= link_to 'Group Sales', '', title: '' %></li>
+                        </ul>
+                    </div>
+                </div>                            
+            </div>
+            <%= render 'erp/hkstore/frontend/modules/tools' %>
+        </div>
+    </div>    
+</div>

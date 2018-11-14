@@ -1,0 +1,20 @@
+vi:
+  erp:
+    hkstore:
+      backend:
+        products:
+          index:
+            name: "Tên sản phẩm"
+            products: "Danh sách sản phẩm"
+        categories:
+          index:
+            name: "Tên chuyên mục"
+            categories: "Danh sách chuyên mục"
+        manufacturers:
+          index:
+            name: "Tên thương hiệu"
+            manufacturers: "Danh sách thương hiệu"
+        menus:
+          index:
+            name: "Tên menu"
+            menus: "Danh sách menu"

@@ -5029,7 +5029,7 @@ table.table-bordered thead > * {
   margin-bottom: 20px; }
 
 .title-about-us {
-  background: url("../../images/bg-title-about.png") repeat-x left 12px;
+  background: url("../images/bg-title-about.png") repeat-x left 12px;
   margin-bottom: 17px; }
 
 .title-about-us h2 {
@@ -5136,7 +5136,7 @@ table.table-bordered thead > * {
     top: 10px;
     background-repeat: no-repeat;
     background-position: top left;
-    background-image: url("../../images/icon-whylist.png"); }
+    background-image: url("../images/icon-whylist.png"); }
   .why-list li a {
     display: block;
     padding: 5px 0 7px;

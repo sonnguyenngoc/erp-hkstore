@@ -1,0 +1,42 @@
+<li class="nav-item <%= "active open" if ["erp/hkstore/backend/products",
+                                          "erp/hkstore/backend/categories",
+                                          "erp/hkstore/backend/manufacturers"].include?(params[:controller]) %>">
+    <a href="javascript:;" class="nav-link nav-toggle">
+        <i class="fa fa-th"></i>
+        <span class="title">Quản lý</span>
+        <% if ["erp/hkstore/backend/products",
+               "erp/hkstore/backend/categories",
+               "erp/hkstore/backend/manufacturers"].include?(params[:controller]) %>
+            <span class="selected"></span>
+            <span class="arrow open"></span>
+        <% else %>
+            <span class="arrow"></span>
+        <% end %>
+    </a>
+    <ul class="sub-menu">
+        <li class="nav-item <%= "active open" if ["erp/hkstore/backend/products"].include?(params[:controller]) %>">
+            <a href="<%= erp_hkstore.backend_products_path %>" class="nav-link ">
+                <span class="title">Sản phẩm</span>
+                <% if ["erp/hkstore/backend/products"].include?(params[:controller]) %>
+                <span class="selected"></span>
+                <% end %>
+            </a>
+        </li>
+        <li class="nav-item <%= "active open" if ["erp/hkstore/backend/categories"].include?(params[:controller]) %>">
+            <a href="<%= erp_hkstore.backend_categories_path %>" class="nav-link ">
+                <span class="title">Chuyên mục</span>
+                <% if ["erp/hkstore/backend/categories"].include?(params[:controller]) %>
+                <span class="selected"></span>
+                <% end %>
+            </a>
+        </li>
+        <li class="nav-item <%= "active open" if ["erp/hkstore/backend/manufacturers"].include?(params[:controller]) %>">
+            <a href="<%= erp_hkstore.backend_manufacturers_path %>" class="nav-link ">
+                <span class="title">Thương hiệu</span>
+                <% if ["erp/hkstore/backend/manufacturers"].include?(params[:controller]) %>
+                <span class="selected"></span>
+                <% end %>
+            </a>
+        </li>
+    </ul>
+</li>

@@ -2,6 +2,10 @@
 
 /*====== Fix bugs Megamenu not showing icon font (26/1/2018) =====*/
 @media (min-width: 992px){
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	.menu-vertical .container-megamenu.vertical .vertical-wrapper ul.megamenu > li > a {  line-height: 24px; height: auto;}
 	.menu-vertical .container-megamenu.vertical .vertical-wrapper ul.megamenu > li > a i,
 	.menu-vertical .container-megamenu.vertical .vertical-wrapper ul.megamenu > li > a b {
@@ -9,8 +13,13 @@
 	}
 	.menu-vertical .container-megamenu.vertical .vertical-wrapper ul.megamenu > li.with-sub-menu > a:before{display: none;}
 	.menu-vertical .container-megamenu.vertical .vertical-wrapper ul.megamenu > li > a img{position: static; transform: inherit;}
+	footer .so-page-builder .container, #content .so-page-builder .container, .typefooter-2 .footer-bottom .container {
+		padding: 0;
+	}
 }
-a, .container-megamenu.horizontal ul.megamenu .subcategory .menu ul li a.main-menu {
+a, .container-megamenu.horizontal ul.megamenu .subcategory .menu ul li a.main-menu, .megamenu-wrapper, body, .product-view .content-product-right .product-box-desc,
+.product-detail .producttab .tab-content .product-property-list li .propery-title, .product-detail .producttab .tab-content .product-property-list li .propery-des,
+ul.breadcrumb li a {
 	color: #272727;
 }
 .common-home a:hover, .container-megamenu.horizontal ul.megamenu > li.home > a, .container-megamenu.horizontal ul.megamenu > li.active > a, .container-megamenu.horizontal ul.megamenu > li:hover > a {
@@ -30,7 +39,8 @@ a, .container-megamenu.horizontal ul.megamenu .subcategory .menu ul li a.main-me
 	margin-top: 11px;
 }
 .typeheader-2 ul.top-link > li {
-	min-width: 135px;
+	min-width: 140px;
+	padding: 22px 0 0 0;
 }
 .typeheader-2 ul.top-link > li .text-item {
 	padding: 0 10px;
@@ -41,9 +51,6 @@ a, .container-megamenu.horizontal ul.megamenu .subcategory .menu ul li a.main-me
 .typeheader-2 ul.top-link > li.account ul li a {
 	margin-left: 0px;
 }
-.shoppingcart-box table.table-striped {
-	margin-bottom:10px;
-}
 .container-megamenu.horizontal .shoppage ul li:hover {
 	padding-left: 5px;
 }
@@ -53,14 +60,14 @@ a, .container-megamenu.horizontal ul.megamenu .subcategory .menu ul li a.main-me
 .container-megamenu.horizontal .shoppage ul a {
 	padding: 2px 0;
 }
-.container-megamenu.horizontal .shoppage ul li:last-child {
+.container-megamenu.horizontal .shoppage ul li:last-child, .shoppingcart-box table.table-striped, .extra-layout1, .row-image, .common-home #content {
 	margin-bottom: 10px;
 }
 .megamenu-pattern .megamenu .with-sub-menu .sub-menu {
 	width: 100%;
 }
 .container-megamenu.horizontal .shoppage .submenu-shop ul {
-	 left: 30%;
+	 left: 31%;
 	 width: 220px;
 }
 .img-full-width {
@@ -68,4 +75,230 @@ a, .container-megamenu.horizontal ul.megamenu .subcategory .menu ul li a.main-me
 }
 .typeheader-2 #sosearchpro .search .select_category {
 	width: 170px;
+}
+.box-cates {
+	padding: 20px 50px 10px 50px;
+}
+.slider-brands {
+	margin: 10px 0;
+}
+.typefooter-2 .footer-bottom {
+	margin-top: 15px;
+}
+.typefooter-2 .box-footer .modcontent ul li a, .typefooter-2 {
+	color: #272727;
+	line-height: 30px;
+}
+.typeheader-2 .navbar-logo.for-firefox {
+	padding: 15px 30px 0 30px;
+}
+.typeheader-2 .navbar-logo.for-firefox img {
+	width: 310px;
+}
+.typefooter-2 .row-top {
+	margin-bottom: 30px;
+}
+.typefooter-2 .block-infos .block-footer-content h4 {
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.typefooter-2 .block-infos .block-footer-content {
+	margin-bottom: 0px;
+}
+.typeheader-2 .search-header-w {
+	padding: 27px 25px;
+}
+.typefooter-2 .module.socials, .typefooter-2 .module.timhangcongnghe {
+	margin-top: 15px;
+}
+.typeheader-2 #sosearchpro .search input {
+	font-size: 15px;
+}
+img.logo-timhangcongnghe {
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+.container-megamenu.horizontal .shoppage ul a, .products-list .product-grid .product-item-container .right-block h4 a {
+	font-weight: 500;
+}
+.blog-item .feature-blog .menu-services {
+	margin-bottom: 5px;
+}
+.typefooter-2 .box-footer .modcontent ul li a:before {
+	content: "\f101";
+    padding-right: 5px;
+	top: 2px;
+	font-family: FontAwesome;	
+}
+ul.breadcrumb {
+	margin: 10px 0;
+	font-weight: 500;
+}
+.welcome-about-us .des-about-us {
+	margin-left: 0;
+}
+.title-about-us, #main-content, #content {
+	margin-bottom: 10px;
+}
+.item-article {
+	font-size: 15px;
+}
+.welcome-about-us .des-about-us {
+	line-height: 22px;
+}
+.box-1-about {
+	margin-bottom: 0;
+}
+.title-about-us h1 {
+  background: #fff;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0 25px 0 0;
+  font-weight: 300;
+  color: #272727;
+  margin-bottom: 5px;
+}
+.form-product-search, .filters-panel {
+	margin-bottom: 15px;
+}
+.product-filter-top {
+	display: none;
+}
+.filters-panel.product-filter-bottom {
+	margin-top: 5px;
+}
+.title-category {
+	padding-bottom: 0;
+}
+.content-aside {
+	margin-bottom: 0;
+}
+h1.title-category {
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #222;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	margin-top: 0;
+	padding-bottom: 0px;
+	font-weight: 500;
+}
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .form-control, select {
+	font-size: 14px;
+}
+.slider-brands .item {
+	opacity: 0.8;
+}
+.product-view .content-product-left .large-image {
+	cursor: default;
+}
+.producttab .tabsslider.vertical-tabs ul.nav-tabs li a {
+	font-size: 13px;
+}
+.product-detail .producttab .tab-content .product-property-list {
+	margin: 0;
+}
+.product-detail .producttab .tab-content .product-property-list li .propery-des {
+	white-space: normal;
+	max-width: 100%;
+	font-size: 16px;
+}
+.product-detail .producttab .tab-content .product-property-list li {
+	width: 100%;
+	padding: 5px 0;
+}
+.product-detail .producttab .tab-content .product-property-list li .propery-title {
+	font-weight: 500;
+	font-size: 16px;
+	min-width: 180px;
+}
+.product-detail .producttab .tab-content .product-property-title {
+	font-size: 20px;
+	font-weight: 700;
+}
+.producttab .tabsslider.vertical-tabs ul.nav-tabs {
+	min-height: 50px;
+}
+.producttab .tabsslider.vertical-tabs .tab-content {
+	border-left: 0;
+	padding: 10px;
+}
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+	cursor: pointer;
+}
+#tab-related-image .content--gallery a.popup-gallery img {
+	padding: 3px;
+}
+#tab-related-image .content--gallery a.popup-gallery img:hover {
+	opacity: 0.8;
+	border: 1px solid #3f51b5;
+	border-radius: 5px;
+}
+.product-view .content-product-midde, .information-information footer, .information footer {
+	margin-top: 10px;
+}
+.producttab .tabsslider.vertical-tabs{
+	margin-bottom: 10px;
+}
+.title-under {
+	margin-bottom: 30px;
+}
+.box-category > ul > li ul {
+	margin-left: 5px;
+}
+.so-pre-loader .so-loader-line {
+	background: #f50;
+}
+.bg-page-404 .error-image {
+	margin: 20px 0;
+}
+.product-view .content-product-right .product-box-desc {
+	padding: 0;
+}
+.media-box-link .media-box-link--content h4 {
+	text-transform: capitalize;
+}
+.mfp-iframe-scaler iframe {
+	padding: 10px;
+	height: 530px;
+	background-color: #000;
+	border-radius: 10px;
+}
+.mfp-close-btn-in .mfp-close {
+	border-radius: 20px;
+	background: #ff3333;
+	opacity: 0.5;
+}
+.mfp-close-btn-in .mfp-close:hover {
+	opacity: 1;
+	background: #ff0000;
+}
+.mfp-close {
+	line-height: 35px;
+}
+.product-property-list .property-item .propery-des i.fa {
+	font-size: 10px;
+}
+.product-property-list .property-item .propery-des .simple-list li {
+	padding: 0 0 7px 18px;
+	position: relative;
+	list-style-type: none;
+}
+.products-list .product-grid .product-item-container {
+	min-height: 400px;
+}
+.products-list .product-grid .product-item-container {
+	margin: 0 0 15px 0;
+}
+.pagination > li > a, .pagination > li > span {
+	padding: 0 16px;
+	line-height: 40px;
+	border-radius: 5px;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span {
+	border-radius: 5px;
+}
+.product-view .content-product-right .box-review .order-num {
+	padding-top: 12px;
 }

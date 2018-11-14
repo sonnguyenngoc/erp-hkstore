@@ -213,3 +213,18 @@ var voucher = {
 		});
 	}
 }
+jQuery(document).ready(function($) {
+	var $window = $(window);
+
+	function checkWidth() {
+		var windowsize = $window.width();
+		if (windowsize > 767) {
+			$('a[href*="account/login"]').click(function(e) {
+				e.preventDefault();
+				$("#so_sociallogin").modal('show');
+			});
+		}
+	}
+	checkWidth();
+	$(window).resize(checkWidth);
+});

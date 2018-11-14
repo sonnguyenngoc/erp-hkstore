@@ -1,9 +1,18 @@
+<% if request.env['HTTP_USER_AGENT'] =~ /[^\(]*[^\)]*[^\t]Firefox\// %>
+<div class="navbar-logo for-firefox d-flex">
+    <div class="logo">
+        <%= link_to image_tag('/hoangkhang/images/dot.gif', data: {sizes: 'auto', src: '/hoangkhang/images/logo-hoangkhang.svg'}, alt: '', class: 'lazyload'),
+                    erp_hkstore.root_path, title: '' %>
+    </div>    
+</div>
+<% else %>
 <div class="navbar-logo d-flex">
     <div class="logo">
-        <%= link_to image_tag('/hoangkhang/images/logo-hoangkhang.svg', data: {sizes: 'auto', src: '/hoangkhang/images/logo-hoangkhang.svg'}, alt: '', class: 'lazyload'),
+        <%= link_to image_tag('/hoangkhang/images/dot.gif', data: {sizes: 'auto', src: '/hoangkhang/images/logo-hoangkhang.svg'}, alt: '', class: 'lazyload'),
                     erp_hkstore.root_path, title: '' %>
-    </div>
+    </div>    
 </div>
+<% end %>
 <div class="search-w d-flex">
     <div class="search-header-w">
         <div class="icon-search hidden-lg hidden-md">
@@ -12,20 +21,7 @@
         <div id="sosearchpro" class="sosearchpro-wrapper so-search ">
             <form method="GET" action="">
                 <div id="search0" class="search input-group form-group">
-                    <div class="select_category filter_type icon-select hidden-sm hidden-xs">
-                        <select class="no-border" name="category_id">
-                            <option value="0">Tất cả chuyên mục</option>
-                            <option value="1">Máy vi tính</option>
-                            <option value="2">Màn hình máy tính</option>
-                            <option value="3">Linh kiện máy tính</option>
-                            <option value="4">Phụ kiện máy tính</option>
-                            <option value="5">Sản phẩm văn phòng</option>
-                            <option value="6">Thiết bị mạng</option>
-                            <option value="7">Thiết bị an ninh</option>
-                            <option value="8">Thiết bị gia dụng</option>
-                        </select>
-                    </div>
-                    <input class="autosearch-input form-control" type="search" value="" size="50" autocomplete="off" placeholder="Nhập từ khóa tìm kiếm..." name="search">
+                    <input class="autosearch-input form-control" type="search" value="" size="50" autocomplete="off" placeholder="Nhập từ khóa tìm kiếm sản phẩm..." name="search">
                     <button type="submit" class="button-search btn btn-default btn-lg" name="submit_search">
                         <i class="fa fa-search"></i><span>Tìm kiếm</span>
                     </button>
@@ -46,14 +42,14 @@
                 <li><%= link_to 'Hướng Dẫn Mua Hàng', '', title: '' %></li>
             </ul>
         </li>
-        <li class="wishlist hidden-md hidden-sm hidden-xs">
+        <!--<li class="wishlist hidden-md hidden-sm hidden-xs">
             <a href="" id="wishlist-total" class="top-link-wishlist" title="Sản phẩm yêu thích <b>1</b>">
                 <i class="ico-main pe-7s-like"></i>
                 <span class="text-item">
                     Sản Phẩm Yêu Thích <b>1</b>
                 </span>
             </a>
-        </li>
+        </li>-->
         <li class="shopping_cart">
             <div id="cart" class="btn-shopping-cart">
                 <a class="btn-group top_cart dropdown-toggle" data-toggle="dropdown">

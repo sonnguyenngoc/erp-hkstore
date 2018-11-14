@@ -7,26 +7,26 @@
                         <div class="block-policy container">
                             <ul>
                                 <li class="item-2 col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="#" class="item-inner">
+                                    <a href="" class="item-inner">
                                         <div class="content">
-                                            <b>Wordwide Delivery</b>
-                                            <span>With sites in 5 langueges,we ship to over 200 countries & regions.</span>
+                                            <b>Giao Hàng Miễn Phí</b>
+                                            <span>Hỗ trợ giao hàng miễn phí tại khu vực nội thành TP. Hồ Chí Minh</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item-3 col-lg-4 col-md-4 hidden-sm hidden-xs">
-                                    <a href="#" class="item-inner">
+                                    <a href="" class="item-inner">
                                         <div class="content">
-                                            <b>Safe Payment</b>
-                                            <span>Pay with the world’s most popular and secure payment methods.</span>
+                                            <b>Thanh Toán Tận Nơi</b>
+                                            <span>Chấp nhận hình thức thu tiền mặt tận nơi trong khu vực TP. Hồ Chí Minh</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="item-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                    <a href="#" class="item-inner">
+                                    <a href="" class="item-inner">
                                         <div class="content">
-                                            <b>24/7 Help Center</b>
-                                            <span>Round the clock assitance for a smooth shopping.</span>
+                                            <b>Đội Ngũ Hỗ trợ</b>
+                                            <span>Kiểm tra tồn kho, tư vấn & báo giá sản phẩm cho khách hàng</span>
                                         </div>
                                     </a>
                                 </li>
@@ -41,20 +41,27 @@
                         <div class="row row_ytbk  row-style ">
                             <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 col_84ww col-style">
                                 <div class="block-infos module">
-                                    <h3 class="modtitle">Company information</h3>
+                                    <h3 class="modtitle">Thông Tin Liên Hệ</h3>
                                     <div class="block-footer-content">
-                                        <h4>Get Question ? Contact Us 24/7</h4>
-                                        <div class="hotline">(+60) 6789 6789 / 6666 8888</div>
-                                        <div class="e-contact"><a href="mailto:contact@opencartworks.com">contact@opencartworks.com</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 col_kznw col-style">
-                                <div class="block-apps module">
-                                    <h3 class="modtitle">Download Our Apps</h3>
-                                    <div class="block-footer-content content-apps">
-                                        <a href="#" title="Google Play"><img data-sizes="auto" class="lazyload" src="hoangkhang/images/loading.svg" data-src="hoangkhang/images/ch-play.png" alt="Google Play"></a>
-                                        <a href="#" title="App Store"><img data-sizes="auto" class="lazyload" src="hoangkhang/images/loading.svg" data-src="hoangkhang/images/app-store.png" alt="App Store"></a>
+                                        <h4><strong>Công Ty TNHH Giải Pháp Công Nghệ Thông Tin Và Truyền Thông Hoàng Khang</strong></h4>
+                                        <div class="hotline">
+                                            <strong>MST: </strong><%= link_to '0 3 0 6 1 4 6 7 3 6', '', title: '' %>
+                                        </div>
+                                        <div class="hotline">
+                                            <strong>Địa Chỉ: </strong><%= link_to 'Số 188 Đường Số 1, Phường 16, Quận Gò Vấp, Hồ Chí Minh', '', title: '' %>
+                                        </div>
+                                        <div class="hotline">
+                                            <strong>Điện thoại: </strong><%= link_to '(028) 3984 7690', '', title: '' %>
+                                        </div>
+                                        <div class="hotline">
+                                            <strong>Hotline: </strong><%= link_to '(028) 2212 9454', '', title: '' %>
+                                        </div>
+                                        <div class="hotline">
+                                            <strong>Email: </strong><%= mail_to 'kinhdoanh@hoangkhang.com.vn', 'kinhdoanh@hoangkhang.com.vn', title: '' %>
+                                        </div>
+                                        <div class="hotline">
+                                            <strong>Ngày làm việc: </strong>Thứ 2 ~ Thứ 7
+                                        </div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -65,15 +72,17 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 col_njm1 col-style">
                                 <div class="box-information box-footer">
                                     <div class="module clearfix">
-                                        <h3 class="modtitle">Information</h3>
+                                        <h3 class="modtitle">Dành Cho Khách Hàng</h3>
                                         <div class="modcontent">
                                             <ul class="menu">
-                                                <li><a href="index.php?route=information/information&information_id=11">About Us</a></li>
-                                                <li><a href="index.php?route=information/information&information_id=6">FAQ</a></li>
-                                                <li><a href="index.php?route=information/information&information_id=3">Warranty And Services</a></li>
-                                                <li><a href="index.php?route=information/information&information_id=7">Support 24/7 page</a></li>
-                                                <li><a href="index.php?route=extension/simple_blog/article">Blog</a></li>
-                                                <li><a href="#">Product Support</a></li>
+                                                <li><%= link_to 'Giới thiệu công ty', erp_hkstore.about_us_path, title: 'Giới thiệu công ty' %></li>
+                                                <li><%= link_to 'Liên hệ công ty', '', title: '' %></li>
+                                                <li><%= link_to 'Tin tức công nghệ', '', title: '' %></li>
+                                                <li><%= link_to 'Yêu cầu báo giá', '', title: '' %></li>
+                                                <li><%= link_to 'Sản phẩm theo hãng', '', title: '' %></li>                                                
+                                                <li><%= link_to 'Dịch vụ sửa chữa & bảo trì', '', title: '' %></li>
+                                                <li><%= link_to 'Dịch vụ thi công hệ thống', '', title: '' %></li>
+                                                <li><%= link_to 'Dịch vụ nâng cấp bảo hành', '', title: '' %></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -82,15 +91,17 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 col_slxc">
                                 <div class="box-service box-footer">
                                     <div class="module clearfix">
-                                        <h3 class="modtitle">Services</h3>
+                                        <h3 class="modtitle">Dành Cho Khách Hàng</h3>
                                         <div class="modcontent">
                                             <ul class="menu">
-                                                <li><a href="index.php?route=information/contact">Contact Us</a></li>
-                                                <li><a href="index.php?route=account/return/add">Returns</a></li>
-                                                <li><a href="#">Support</a></li>
-                                                <li><a href="index.php?route=information/sitemap">Site Map</a></li>
-                                                <li><a href="#">Customer Service</a></li>
-                                                <li><a href="#">Custom Link</a></li>
+                                                <li><%= link_to 'Câu hỏi thường gặp', '', title: '' %></li>
+                                                <li><%= link_to 'Phương thức thanh toán', '', title: '' %></li>
+                                                <li><%= link_to 'Hướng dẫn mua hàng', '', title: '' %></li>
+                                                <li><%= link_to 'Cách thức giao nhận', '', title: '' %></li>
+                                                <li><%= link_to 'Bảo vệ người mua', '', title: '' %></li>
+                                                <li><%= link_to 'Chính sách đổi trả', '', title: '' %></li>
+                                                <li><%= link_to 'Chính sách bảo mật', '', title: '' %></li>
+                                                <li><%= link_to 'Quy chế hoạt động trang TMĐT', '', title: '' %></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -100,83 +111,34 @@
                                 <div class="row row_du36  row-style ">
                                     <div class="col-lg-12 col-md-7 col-sm-6 col-xs-12 col_ikvg col-style">
                                         <div class="module newsletter-footer">
-                                            <div class="newsletter" style="width:100%           ;  ; ">
+                                            <div class="newsletter" style="width:100%;">
                                                 <div class="title-block">
-                                                    <div class="page-heading font-title"> Newsletter </div>
-                                                    <div class="promotext">Register your email for news and get special offers</div>
+                                                    <div class="page-heading font-title">Liên Kết Trang</div>
                                                 </div>
                                                 <div class="block_content">
-                                                    <form method="post" id="signup" name="signup" class="form-group form-inline signup send-mail">
-                                                        <div class="form-group">
-                                                            <div class="input-box">
-                                                                <input type="email" placeholder="Your email address..." value="" class="form-control" id="txtemail" name="txtemail" size="55">
-                                                            </div>
-                                                            <div class="subcribe">
-                                                                <button class="btn btn-primary btn-default font-title" type="submit" onclick="return subscribe_newsletter();" name="submit">
-                                                                    <span>Subscribe</span>
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
+                                                    <div class="fb-page" data-href="https://www.facebook.com/TimHangCongNghe/" data-small-header="true" data-hide-cover="false" data-show-facepile="false" data-hide-cta="true"></div>
+                                                </div>
+                                                <div class="block_content">
+                                                    <%= link_to image_tag('/hoangkhang/images/dot.gif', data: {sizes: 'auto', src: '/hoangkhang/images/logo-timhangcongnghe.svg'}, alt: 'Website thương mại điện tử Tìm Hàng Công Nghệ', class: 'lazyload logo-timhangcongnghe'),
+                                                                'http://timhangcongnghe.com/', title: 'Website thương mại điện tử Tìm Hàng Công Nghệ', target: '_blank' %>
                                                 </div>
                                                 <!--/.modcontent-->
                                             </div>
-                                            <script type="text/javascript">
-                                                function subscribe_newsletter() {
-                                                    var emailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-                                                    var email = $('#txtemail').val();
-                                                    var d = new Date();
-                                                    var createdate = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate() + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
-                                                    var status = 0;
-                                                    var dataString = 'email=' + email + '&createdate=' + createdate + '&status=' + status;
-                                                    if (email != "") {
-                                                        if (!emailpattern.test(email)) {
-                                                            $('.alert').remove();
-                                                            $('.send-mail').after('<div class="alert alert-danger " role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> Invalid Email </div>')
-                                                            return false;
-                                                        } else {
-                                                            $.ajax({
-                                                                url: 'index.php?route=extension/module/so_newletter_custom_popup/newsletter',
-                                                                type: 'post',
-                                                                data: dataString,
-                                                                dataType: 'json',
-                                                                success: function(json) {
-                                                                    $('.alert').remove();
-                                                                    if (json.error == false) {
-                                                                        $('.send-mail').after('<div class="alert alert-success" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> ' + json.message + '</div>');
-                                                                        setTimeout(function() {
-                                                                            var this_close = $('.popup-close');
-                                                                            this_close.parent().css('display', 'none');
-                                                                            this_close.parents().find('.so_newletter_custom_popup_bg').removeClass('popup_bg');
-                                                                        }, 3000);
-                                                                    } else {
-                                                                        $('.send-mail').after('<div class="alert alert-danger" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> ' + json.message + '</div>');
-                                                                    }
-                                                                    var x = document.getElementsByClassName('signup');
-                                                                    for (i = 0; i < x.length; i++) {
-                                                                        x[i].reset();
-                                                                    }
-                                                                }
-                                                            });
-                                                            return false;
-                                                        }
-                                                    } else {
-                                                        alert("Email is required");
-                                                        $(email).focus();
-                                                        return false;
-                                                    }
-                                                }
-                                            </script>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-5 col-sm-6 col-xs-12 col_3put col-style">
                                         <div class="module socials">
-                                            <h3 class="modtitle">Socials network</h3>
                                             <ul>
-                                                <li class="facebook"><a href="https://www.facebook.com/smartaddons.page" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li class="twitter"><a href="https://twitter.com/smartaddons" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li class="google_plus"><a href="https://plus.google.com/u/0/+Smartaddons/posts" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                                <li class="pinterest"><a href="https://www.pinterest.com/smartaddons/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                                <li class="facebook">
+                                                    <%= link_to '<i class="fa fa-facebook"></i>'.html_safe, '', title: '', target: '_blank' %>
+                                                </li>
+                                                <li class="youtube">
+                                                    <%= link_to '<i class="fa fa-youtube"></i>'.html_safe, '', title: '', target: '_blank' %>
+                                                </li>
+                                                <li class="skype">
+                                                    <%= link_to '<i class="fa fa-skype"></i>'.html_safe, '', title: '', target: '_blank' %>
+                                                </li>
+                                                <li class="expeditedssl">
+                                                    <%= link_to '<i class="fa fa-expeditedssl"></i>'.html_safe, '', title: '', target: '_blank' %>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -189,20 +151,21 @@
         </div>
     </div>
     <div class="button-toggle hidden-lg hidden-md">
-        <a class="showmore" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="collapse-footer">
-            <span class="toggle-more">Show More <i class="fa fa-angle-down"></i></span>
-            <span class="toggle-less">Show Less <i class="fa fa-angle-up"></i></span>
+        <a class="showmore" data-toggle="collapse" href="javascript:void(0);" aria-expanded="false" aria-controls="collapse-footer">
+            <span class="toggle-more">Hiển thị thông tin <i class="fa fa-angle-down"></i></span>
+            <span class="toggle-less">Ẩn thông tin <i class="fa fa-angle-up"></i></span>
         </a>
     </div>
     <div class="footer-bottom ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 copyright-w">
-                    <div class="copyright"> TechCity &copy; 2018 Demo Store. All Rights Reserved. Designed by <a href="http://www.opencartworks.com/" target="_blank">OpenCartWorks.Com</a>
+                    <div class="copyright">
+                        &copy; Copyright 2008 ~ 2018 <%= link_to 'Hoang Khang Incotech', erp_hkstore.root_path, title: '', target: '_blank' %>. All Rights Reserved.
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-5 col-sm-12 col-xs-12 payment-w">
-                    <img src="hoangkhang/images/payment.png" alt="">
+                    <%= image_tag '/hoangkhang/images/payment.png', alt: '' %>
                 </div>
             </div>
         </div>

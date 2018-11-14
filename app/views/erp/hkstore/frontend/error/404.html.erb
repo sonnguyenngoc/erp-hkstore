@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div id="content" class="bg-page-404 col-sm-12 ">
+            <div class="col-sm-7 text-center">
+                <div class="error-image">
+                    <%= image_tag '/hoangkhang/images/404-text.png', alt: '' %>
+                </div>
+                <h1>TRANG HIỆN TẠI KHÔNG TÌM THẤY!</h1>
+                <p>Trang không được tìm thấy do lỗi khách quan không còn hiện hữu hoặc lỗi chủ quan do đã bị khóa bởi bộ phận quản trị website <%= link_to 'Hoang Khang Incotech', 'http://hoangkhang.com.vn/', title: '', target: '_blank' %>.</p>
+                <%= link_to 'Quay lại trang chủ', erp_hkstore.root_path, title: '', class: 'btn btn-success' %>                
+            </div>
+            <div class="col-sm-5">
+                <%= image_tag '/hoangkhang/images/404-img.png', alt: '' %>                
+            </div>
+        </div>
+    </div>
+</div>

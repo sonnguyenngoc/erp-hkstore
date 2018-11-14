@@ -25,6 +25,7 @@
 @import 'header.css';
 @import 'footer.css';
 @import 'responsive.css';
+@import 'style-category.css';
 body, #wrapper {
     font-family: 'Roboto', sans-serif
 }

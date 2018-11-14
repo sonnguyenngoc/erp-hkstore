@@ -27,18 +27,6 @@ $(document).ready(function(){
 		});
 	});
 
-	// add class Box categories
-	jQuery(document).ready(function($){
-
-		if($("#accordion-category .panel .panel-collapse").hasClass("in")){
-			$('#accordion-category .panel .accordion-toggle').addClass("show");			
-		} 
-		else{
-			$('#accordion-category .panel .accordion-toggle').removeClass("show");
-		}
-
-	});
-
 
 	// custom to show footer center
 	$(".button-toggle").click(function () {
