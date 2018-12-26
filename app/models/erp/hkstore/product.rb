@@ -1,8 +1,23 @@
 module Erp::Hkstore
-  class Product < ApplicationRecord
+  class Product < ApplicationRecord    
     self.table_name = "products"
+    has_and_belongs_to_many :categories
+    belongs_to :manufacturer
+    
+    after_create :create_alias
+    def create_alias
+      name = self.cache_display_name
+      self.update_column(:alias, name.unaccent.downcase.to_s.gsub(/[^0-9a-z ]/i, '').gsub(/ +/i, '-').strip)
+    end
     
     def self.search(params)
+      query = self.where("products.status=1").where("products.in_use=true")
+                  .order("products.created_at desc")
+      
+      return query
+    end
+    
+    def self.get_data
       query = self.where("products.status=1").where("products.in_use=true")
                   .order("products.created_at desc")
       

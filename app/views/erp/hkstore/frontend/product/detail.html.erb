@@ -1,29 +1,32 @@
 <div class="breadcrumbs ">
     <div class="container">
-        <div class="current-name">Màn Hình HP S240uj 23.8-Inch 2K IPS (T7B66AA)</div>
+        <div class="current-name">Mobile Workstation HP ZBook 17 G5 Core i7-8750H/16GB DDR4/256GB SSD PCIe NVMe/nVIDIA Quadro P2000 4GB GDDR5/FreeDOS (2XD25AV)</div>
         <ul class="breadcrumb">
             <li><%= link_to '<i class="fa fa-home"></i>'.html_safe, erp_hkstore.root_path, title: '' %></li>
             <li><%= link_to 'Màn hình máy tính', erp_hkstore.product_listing_path, title: '' %></li>
-            <li><%= link_to 'Màn Hình HP S240uj 23.8-Inch...', '', title: '' %></li>
+            <li><%= link_to 'Mobile Workstation HP ZBook 17 G5 Core i7-8750H...', '', title: '' %></li>
         </ul>
     </div>
 </div>
 <div class="content-main container product-detail  ">
     <div class="row">
         <div id="content" class="product-view col-md-9 col-sm-12 col-xs-12 fluid-sidebar">
-            <a href="javascript:void(0)" class=" open-sidebar hidden-lg hidden-md"><i class="fa fa-bars"></i>Mở Chuyên Mục Liên Quan</a>
+            <a href="javascript:void(0)" class=" open-sidebar hidden-lg hidden-md">
+                <i class="fa fa-bars"></i> Mở Chuyên Mục Liên Quan
+            </a>
             <div class="sidebar-overlay "></div>
             <div class="content-product-mainheader clearfix">
                 <div class="row">
-                    <div class="content-product-left  col-md-5 col-sm-12 col-xs-12">
-                        <div class="so-loadeding"></div>
-                        <div class="large-image  ">                            
-                            <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/loading.gif" data-src="/hoangkhang/images/products/product-detail.jpg" data-zoom-image="/hoangkhang/images/products/product-detail.jpg" title="" alt="" />
+                    <div class="content-product-left  col-md-5 col-sm-12 col-xs-12">                        
+                        <div class="large-image">
+                            <%= image_tag '/hoangkhang/images/products/product-detail.jpg', alt: '' %>
                         </div>                    
                     </div>
                     <div class="content-product-right col-md-7 col-sm-12 col-xs-12">
                         <div class="title-product">
-                            <h1 itemprop="name">Màn Hình HP S240uj 23.8-Inch 2K IPS (T7B66AA)</h1>
+                            <h1>
+                                Mobile Workstation HP ZBook 17 G5 Core i7-8750H/16GB DDR4/256GB SSD PCIe NVMe/nVIDIA Quadro P2000 4GB GDDR5/FreeDOS (2XD25AV)
+                            </h1>
                         </div>
                         <div class="box-review">
                             <span class="order-num">
@@ -69,7 +72,28 @@
                                     Ngang 54.06cm x Cao 42.9cm x Sâu 21.34cm, 5.5kg
                                 </div>
                             </div>
+                            <div class="clearfix"></div>
                         </div>
+                        <div class="box-cart clearfix form-group">											
+                            <div class="box-info-product">
+                                <div class="option quantity">
+                                    <label class="control-label" for="input-quantity">SỐ LƯỢNG MUA:</label>
+                                    <div class="input-group quantity-control" unselectable="on" style="user-select: none;">
+                                          <span class="input-group-addon product_quantity_down fa fa-minus"></span>
+                                          <input class="form-control" type="text" name="quantity" value="1">
+                                          <input type="hidden" name="product_id" value="42">								  
+                                          <span class="input-group-addon product_quantity_up fa fa-plus"></span>
+                                    </div>
+                                </div>
+                                <div class="detail-action">
+                                    <div class="cart">
+                                        <input type="button" value="Thêm Vào Giỏ Hàng" data-loading-text="Loading..." id="button-cart" class="btn btn-mega">
+                                        <input type="button" value="Mua Ngay" data-loading-text="Loading..." id="button-checkout" class="btn btn-checkout ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+						</div>
                         <strong>Số điện thoại: </strong> <a href="">(028) 3984 7690</a><br>
                         <strong>Email kinh doanh: </strong> <a href="">kinhdoanh@hoangkhang.com.vn</a><br>
                         <strong>Skype kinh doanh: </strong> <%= link_to image_tag('/hoangkhang/images/skype.png', alt: ''), '', title: '' %>
@@ -225,13 +249,56 @@
                                     <div class="tab-pane" id="tab-related-image">
                                         <div class="tab-content content--gallery">
                                             <div class="row">
-                                                <% (0..8).each do |related_image| %>
-                                                    <div class="col-sm-4">
-                                                        <a class="popup-gallery" href="/hoangkhang/images/products/product-detail.jpg" title="">
-                                                            <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail.jpg" alt="" />
-                                                        </a>
-                                                    </div>
-                                                <% end %>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-01.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-01.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-02.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-02.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-03.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-03.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-04.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-04.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-05.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-05.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-06.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-06.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-07.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-07.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-08.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-08.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-09.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-09.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-12">
+                                                    <a class="popup-gallery" href="/hoangkhang/images/products/product-detail-large-10.jpg" title="">
+                                                        <img class="lazyload" data-sizes="auto" src="data:/hoangkhang/images/dot.gif" data-src="/hoangkhang/images/products/product-detail-small-10.jpg" alt="" />
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -367,7 +434,7 @@
         <aside class="col-md-3 col-sm-4 col-xs-12 content-aside right_column sidebar-offcanvas product-view">
             <span id="close-sidebar" class="fa fa-times"></span>
             <div class="module category-style">
-                <h3 class="modtitle"><span>Chuyên Mục</span></h3>
+                <h3 class="modtitle"><span>CHUYÊN MỤC LIÊN QUAN</span></h3>
                 <div class="mod-content box-category">
                     <ul class="accordion">
                         <li class="panel">

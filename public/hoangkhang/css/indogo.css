@@ -415,7 +415,7 @@ header.navbar-compact {
 .lazy {
   display: block;
   overflow: hidden;
-  background: transparent url(../../images/lazy-loader.gif) no-repeat center center; }
+  background: transparent url(../images/lazy-loader.gif) no-repeat center center; }
 
 @media (min-width: 1200px) {
   .lazy.lazy-loaded {
@@ -977,7 +977,7 @@ body > .alert .alert.fadeOut {
   display: none; }
 
 .so-loadeding {
-  background: white url(../../images/lazy-loader.gif) no-repeat center center;
+  background: white url(../images/lazy-loader.gif) no-repeat center center;
   height: 100%;
   position: absolute;
   z-index: 2;

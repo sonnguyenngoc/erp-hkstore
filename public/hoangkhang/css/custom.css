@@ -35,6 +35,9 @@ ul.breadcrumb li a {
 .typeheader-2 .navbar-logo img {
 	width: 100%;
 }
+ul.breadcrumb li a {
+	font-size: 13px;
+}
 .typeheader-2 ul.top-link > li.lang-curr .text-item {
 	margin-top: 11px;
 }
@@ -77,7 +80,7 @@ ul.breadcrumb li a {
 	width: 170px;
 }
 .box-cates {
-	padding: 20px 50px 10px 50px;
+	padding: 20px 50px 0px 50px;
 }
 .slider-brands {
 	margin: 10px 0;
@@ -194,7 +197,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 	cursor: default;
 }
 .producttab .tabsslider.vertical-tabs ul.nav-tabs li a {
-	font-size: 13px;
+	font-size: 14px;
 }
 .product-detail .producttab .tab-content .product-property-list {
 	margin: 0;
@@ -301,4 +304,22 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 }
 .product-view .content-product-right .box-review .order-num {
 	padding-top: 12px;
+}
+.product-view .content-product-right .box-info-product .quantity {
+	margin: 5px 0;
+}
+#content .content-product-mainheader .form-group {
+	margin-bottom: 5px;
+}
+.product-view .content-product-right .box-info-product .cart .btn.btn-checkout {
+	margin: 0 5px;
+}
+.product-view .content-product-right .title-product h1 {
+	text-transform: none;
+	line-height: 25px;
+	font-size: 18px;
+}
+.product_page_price {
+	margin-bottom: 5px;
+  margin-top: 0px;
 }

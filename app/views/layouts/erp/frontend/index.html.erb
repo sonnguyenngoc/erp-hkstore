@@ -9,7 +9,9 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
     <%= stylesheet_link_tag '/hoangkhang/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag '/hoangkhang/css/font-awesome.min.css' %>    
     <%= stylesheet_link_tag '/hoangkhang/css/main-style.css' %>
@@ -55,8 +57,10 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+    
     <div id="wrapper" class="wrapper-full banners-effect-3">
         <%= render 'erp/hkstore/frontend/modules/loader' %>
+        
         <!-- Header Start -->
         <%= render 'erp/hkstore/frontend/modules/header' %>
         <!-- Header End -->        
@@ -65,9 +69,11 @@
             
         <%= render 'erp/hkstore/frontend/modules/footer' %>
     </div>
+    
     <% if params[:controller] == "erp/hkstore/frontend/product" && params[:action] == "listing" %>
         <%= javascript_include_tag '/hoangkhang/js/category-page.js' %>
     <% end %>
+    
     <% if params[:controller] == "erp/hkstore/frontend/product" && params[:action] == "detail" %>
         <%= javascript_include_tag '/hoangkhang/js/product-detail.js' %>
     <% end %>

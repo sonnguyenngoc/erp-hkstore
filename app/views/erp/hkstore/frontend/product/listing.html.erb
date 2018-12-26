@@ -25,7 +25,7 @@
                 </div>
                 <h1 class="title-category ">Màn Hình Máy Tính</h1>                            
                 <div class="products-list row nopadding-xs">
-                    <% (0..8).each do |product| %>
+                    <% (0..5).each do |product| %>
                         <div class="product-layout product-grid product-grid-3 col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="product-item-container">
                                 <div class="left-block left-b">
@@ -126,7 +126,7 @@
                                     <div class="so-filter-option">
                                         <div class="so-option-container">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" name="text_search"value="">
+                                                <input type="text" class="form-control" name="text_search" value="" placeholder="Tìm kiếm trong chuyên mục...">
                                                 <div class="input-group-btn">
                                                     <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
                                                 </div>
@@ -139,7 +139,7 @@
                         <li class="so-filter-options" data-option="Subcategory">
                             <div class="so-filter-heading">
                                 <div class="so-filter-heading-text">
-                                    <span>CPU</span>
+                                    <span>Bộ Vi Xử Lý - CPU</span>
                                 </div>
                                 <i class="fa fa-chevron-down"></i>
                             </div>
@@ -151,10 +151,10 @@
                                                 <span class="fa fa-square-o"></i>
                                             </div>
                                             <label>
-                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Knitwear
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Intel Pentium
                                             </label>
                                             <div class="option-count ">
-                                                <span>2</span>
+                                                <span>(3)</span>
                                                 <i class="fa fa-times"></i>
                                             </div>
                                         </div>
@@ -165,10 +165,10 @@
                                                 <span class="fa fa-square-o"></i>
                                             </div>
                                             <label>
-                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Blazers
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Intel Celeron
                                             </label>
                                             <div class="option-count ">
-                                                <span>0</span>
+                                                <span>(5)</span>
                                                 <i class="fa fa-times"></i>
                                             </div>
                                         </div>
@@ -179,7 +179,7 @@
                                                 <span class="fa fa-check-square-o"></span>
                                             </div>
                                             <label>
-                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Dresses
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Intel Core i3
                                             </label>
                                             <div class="option-count  opt_close">
                                                 <i class="fa fa-times"></i>
@@ -192,20 +192,196 @@
                                                 <span class="fa fa-square-o"></i>
                                             </div>
                                             <label>
-                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Outerwear
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Intel Core i5
                                             </label>
                                             <div class="option-count ">
-                                                <span>2</span>
+                                                <span>(13)</span>
                                                 <i class="fa fa-times"></i>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> Intel Core i7
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(17)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </li>                        
+                        </li>
+                        <li class="so-filter-options" data-option="Subcategory">
+                            <div class="so-filter-heading">
+                                <div class="so-filter-heading-text">
+                                    <span>Bộ Nhớ Trong - RAM</span>
+                                </div>
+                                <i class="fa fa-chevron-down"></i>
+                            </div>
+                            <div class="so-filter-content-opts">
+                                <div class="so-filter-content-opts-container">
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 2GB
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(3)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_disable" >
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 4GB
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(5)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt_active  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-check-square-o"></span>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 8GB
+                                            </label>
+                                            <div class="option-count  opt_close">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 16GB
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(13)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 32GB
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(17)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="so-filter-options" data-option="Subcategory">
+                            <div class="so-filter-heading">
+                                <div class="so-filter-heading-text">
+                                    <span>Ổ Cứng</span>
+                                </div>
+                                <i class="fa fa-chevron-down"></i>
+                            </div>
+                            <div class="so-filter-content-opts">
+                                <div class="so-filter-content-opts-container">
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 128GB SSD
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(3)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_disable" >
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 256GB SSD
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(5)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt_active  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-check-square-o"></span>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 512GB SSD
+                                            </label>
+                                            <div class="option-count  opt_close">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 500GB HDD
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(13)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="so-filter-option-sub so-filter-option opt-select  opt_enable">
+                                        <div class="so-option-container">
+                                            <div class="option-input">
+                                                <span class="fa fa-square-o"></i>
+                                            </div>
+                                            <label>
+                                                <%= image_tag '/hoangkhang/images/placeholder-20x20.png', alt: '', class: 'hidden' %> 1TB HDD
+                                            </label>
+                                            <div class="option-count ">
+                                                <span>(17)</span>
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                     <a href="javascript:;" class="btn btn-default inverse btn_resetAll">
-                        <span class="hidden fa fa-times" aria-hidden="true"></span>Reset All
+                        <span class="hidden fa fa-times" aria-hidden="true"></span> Xóa Bộ Lọc
                     </a>
                 </div>
             </div>            
